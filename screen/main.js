@@ -2,7 +2,7 @@
 
 stylesheet.rel = 'stylesheet';
 stylesheet.type = 'text/css';
-stylesheet.href = './project/KB_CMS/style/main.css'; 
+stylesheet.href = './project/xframe-study/style/main.css'; 
 
 document.head.appendChild(stylesheet);
 
