@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map_list>
+	<map>
+		<screen version="2.0" scriptcode="java" title="헤더" directory="/SYS/Frames/" screenid="header" last_update_date="2024-01-16 17:54:01" width="1280" width_type="0" height="64" height_type="0" on_load="eventfunc:screen_on_load()" funclist="screen_on_load"/>
+		<panel control_id="70" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="1280" width_unit="1" height="64" back_color="004E4442" transparent="0" border="0" content_display_type="2" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
+			<tab_order order_option="0" order_info="71,72"/>
+			<panel control_id="71" semantic_tag="0" position="1" x="0" y="0" right="768" bottom="0" width="512" width_percent="40" width_unit="1" height="64" transparent="1" border="0" content_display_type="2" content_flex_alignitems="center" title_font="맑은 고딕,9,0,0,0,0">
+				<tab_order order_option="0" order_info="108"/>
+				<pushbutton control_id="108" position="1" x="26" y="0" right="462" bottom="0" width="24" height="64" margin="24,20,0,0" display_type="0" style_class="0" custom_class="flex-00" text="" font="맑은 고딕,9,0,0,0,0" back_color="004E4442" border="4" image_normal="/menu_btn.png" image_horz_align="1" image_vert_align="1" box_shadow_effect="0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+				<image control_id="109" autosize="0" position="1" x="80" y="0" right="322" bottom="40" width="110" height="24" display_type="0" custom_class="flex-00" transparent="1" border="0" vert_align="1" padding="0,0,0,0" image="/logo.png" imagesize="3" image_width="110" image_height="24"/>
+				<text control_id="110" autosize="0" position="1" x="235" y="0" right="124" bottom="0" width="153" height="64" margin="16,0,0,0" display_type="0" custom_class="has-line" text="콘텐츠 관리 시스템" font="@나눔고딕,20,600,0,0,0" fore_color="00FFFFFF" transparent="1" text_margin="16,0,0,0" line_height="32" version="1.1" on_click="eventfunc:btn_on_click(objInst)"/>
+			</panel>
+			<panel control_id="72" semantic_tag="0" position="1" x="768" y="0" right="0" bottom="0" width="512" width_percent="40" width_unit="1" height="64" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="end" title_font="맑은 고딕,9,0,0,0,0">
+				<panel control_id="103" semantic_tag="0" position="1" x="0" y="0" right="98" bottom="0" width="414" height="64" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="end" title_font="맑은 고딕,9,0,0,0,0">
+					<text control_id="104" autosize="0" position="1" x="0" y="0" right="170" bottom="0" width="244" height="64" margin="0,5,0,0" custom_class="user_name" text="김국민" font="나눔고딕,15,1,0,0,0" fore_color="0000DCFF" transparent="1" horz_align="2" init_fitwidth="0" letter_spacing="-0.3px" version="1.1"/>
+					<text control_id="105" autosize="0" position="1" x="0" y="0" right="314" bottom="0" width="100" width_type="1" height="64" margin="0,15,0,0" custom_class="user_num flex-00 fit-content" text="(KB123456)님" font="맑은 고딕,14,0,0,0,0" fore_color="00FFFFFF" transparent="1" line_height="20" version="1.1"/>
+					<text control_id="107" autosize="0" position="1" anchor="7" x="325" y="0" right="0" bottom="0" width="89" height="64" margin="0,24,0,0" display_type="0" custom_class="flex-00 has-line" text="로그아웃" font="나눔고딕,15,600,0,0,0" fore_color="00FFFFFF" transparent="1" horz_align="1" text_margin="12,0,0,0" image="/logout_btn.png" image_position="1" image_margin="13" version="1.1"/>
+				</panel>
+			</panel>
+		</panel>
+	</map>
+</map_list>

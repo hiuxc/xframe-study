@@ -1,37 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="KB_CMS_MAIN" screenid="main" last_update_date="2024-01-09 10:49:49" width="1280" width_type="1" height="800" height_type="1" back_color="00F6F5F3" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,btn_horz_1_on_mouseup,btn_horz_2_on_mouseup,btn_horz_3_on_mouseup,btn_horz_4_on_mouseup,btn_vert_1_on_mouseup,btn_vert_2_on_mouseup,btn_vert_3_on_mouseup,btn_vert_4_on_mouseup,btn_vert_fold_1_on_mouseup,btn_vert_fold_2_on_mouseup,btn_vert_fold_3_on_mouseup,btn_vert_fold_4_on_mouseup,btn_vert_autosize_1_on_mouseup,btn_vert_autosize_2_on_mouseup,btn_vert_autosize_3_on_mouseup,btn_vert_autosize_4_on_mouseup,btn_horz_autosize_1_on_mouseup,btn_horz_autosize_2_on_mouseup,btn_horz_autosize_3_on_mouseup,btn_horz_autosize_4_on_mouseup"/>
-		<tab_order order_option="0" order_info="9,40,694"/>
-		<div control_id="8" x="0" y="0" right="0" bottom="736" width="1280" height="64" custom_class="head-bg" back_color="004E4442"/>
-		<pushbutton control_id="9" x="24" y="20" right="1232" bottom="756" width="24" height="24" style_class="0" text="" font="맑은 고딕,9,0,0,0,0" back_color="004E4442" border="4" image_normal="/menu_btn.png" image_horz_align="1" image_vert_align="1" box_shadow_effect="0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
-		<image control_id="10" autosize="0" x="68" y="20" right="1102" bottom="756" width="110" height="24" transparent="1" border="0" padding="0,0,0,0" image="/logo.png" imagesize="1" image_width="110" image_height="24"/>
-		<div control_id="15" x="196" y="23" right="1083" bottom="759" width="1" height="18" back_color_opacity="1" border="0"/>
-		<text control_id="16" autosize="0" x="213" y="16" right="914" bottom="752" width="153" height="32" custom_class="head_tt" text="콘텐츠 관리 시스템" font="@나눔고딕,20,600,0,0,0" fore_color="00FFFFFF" transparent="1" line_height="32" version="1.1"/>
-		<div control_id="21" x="1154" y="24" right="125" bottom="758" width="1" height="18" back_color_opacity="1" border="0"/>
-		<text control_id="34" autosize="0" x="888" y="21" right="236" bottom="757" width="156" width_type="1" height="22" custom_class="user_name" text="김국민" font="나눔고딕 ExtraBold,15,1,0,0,0" transparent="1" horz_align="2" init_fitwidth="0" letter_spacing="-0.3px" version="1.1"/>
-		<text control_id="35" autosize="0" x="1053" y="22" right="141" bottom="758" width="86" height="20" custom_class="user_num" text="(KB123456)님" font="맑은 고딕,9,0,0,0,0" fore_color="00FFFFFF" transparent="1" line_height="20" version="1.1"/>
-		<text control_id="36" autosize="0" x="1167" y="20" right="24" bottom="756" width="89" height="24" custom_class="user_lgout" text="로그아웃" font="나눔고딕,9,600,0,0,0" fore_color="00FFFFFF" transparent="1" image="/logout_btn.png" image_position="1" version="1.1"/>
-		<panel control_id="40" semantic_tag="0" x="0" y="64" right="1020" bottom="0" width="260" height="736" custom_class="lnb_panel" border="0" title_font="맑은 고딕,9,0,0,0,0">
-			<tab_order order_option="0" order_info="406,408,410,412"/>
-			<panel control_id="406" name="pn_vert_fold_1" semantic_tag="0" x="0" y="24" right="2" bottom="612" width="258" height="100" border="0" vertscrollbar_style="0" hidden="1" title_font="맑은 고딕,9,0,0,0,0">
-				<tab_order order_option="0" order_info="407,693"/>
-				<pushbutton control_id="407" name="btn_vert_fold_1" x="22" y="0" right="20" bottom="76" width="216" height="24" text="대시보드" font="맑은 고딕,9,0,0,0,0" border="4" image_normal="/bottom_arrow.png" image_horz_align="2" image_vert_align="1" horz_align="0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_vert_fold_1_on_mouseup(objInst)"/>
-				<pushbutton control_id="693" x="22" y="36" right="20" bottom="40" width="216" height="24" text="모니터링 대시보드" font="맑은 고딕,9,0,0,0,0" border="4" image_normal="/depth_menu.png" horz_align="0" text_margin="20,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
-			</panel>
-			<panel control_id="408" name="pn_vert_fold_2" semantic_tag="0" x="0" y="138" right="2" bottom="498" width="258" height="100" back_color="0057C7FF" border="0" vertscrollbar_style="0" hidden="1" title_font="맑은 고딕,9,0,0,0,0">
-				<pushbutton control_id="409" name="btn_vert_fold_2" x="0" y="0" right="0" bottom="76" width="258" width_unit="1" height="26" text="2" font="맑은 고딕,9,0,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_vert_fold_2_on_mouseup(objInst)"/>
-			</panel>
-			<panel control_id="410" name="pn_vert_fold_3" semantic_tag="0" x="0" y="258" right="2" bottom="378" width="258" height="100" back_color="0057FCFF" border="0" vertscrollbar_style="0" hidden="1" title_font="맑은 고딕,9,0,0,0,0">
-				<pushbutton control_id="411" name="btn_vert_fold_3" x="0" y="0" right="0" bottom="74" width="258" width_unit="1" height="26" text="3" font="맑은 고딕,9,0,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_vert_fold_3_on_mouseup(objInst)"/>
-			</panel>
-			<panel control_id="412" name="pn_vert_fold_4" semantic_tag="0" x="0" y="402" right="2" bottom="234" width="258" height="100" back_color="0057FF8C" border="0" vertscrollbar_style="0" hidden="1" title_font="맑은 고딕,9,0,0,0,0">
-				<pushbutton control_id="413" name="btn_vert_fold_4" x="0" y="0" right="0" bottom="74" width="258" width_unit="1" height="26" text="4" font="맑은 고딕,9,0,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_vert_fold_4_on_mouseup(objInst)"/>
-			</panel>
-		</panel>
-		<accordion control_id="415" name="accordion_vert_fold" x="30" y="772" width="28" height="28" enable="1">
-		</accordion>
-		<accordion control_id="391" name="accordion_vert" x="0" y="772" width="28" height="28" enable="1">
-		</accordion>
+		<screen version="2.0" scriptcode="java" title="KB_CMS_MAIN" screenid="main" last_update_date="2024-01-19 17:57:57" width="1280" width_type="0" height="800" height_type="0" back_color="00F6F5F3" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,btn_vert_depth2_1_on_mouseup,btn_vert_fold_1_on_mouseup,btn_vert_fold_2_on_mouseup,btn_vert_fold_3_on_mouseup,btn_vert_fold_4_on_mouseup,btn_getxdatasetvalue_on_mouseup,btn_addstring_on_mouseup,btn_setpicklist_on_mouseup,btn_getselectedcode_on_mouseup,btn_setselectedcode_on_mouseup,cbo_basic_on_itemchange"/>
+		<tab_order order_option="2" order_info="3,1,7"/>
+		<tab control_id="3" position="1" x="0" y="64" right="1020" bottom="0" width="260" height="736" margin="0,0,64,0" resize_dir="2" border="0" tabitem_hidden="1">
+			<tab_item width="260" link_screen="/SYS/Frames/lnb" panel_color="00EBEBEB">
+			</tab_item>
+		</tab>
+		<tab control_id="1" x="0" y="0" right="0" bottom="736" width="1280" width_unit="1" height="64" display_type="0" border="0" tabitem_hidden="1">
+			<tab_item link_screen="/SYS/Frames/header" selhoverimage="0" panel_color="00EBEBEB">
+			</tab_item>
+		</tab>
+		<tab control_id="7" x="260" y="64" right="0" bottom="0" width="1020" height="736" resize_dir="3" back_color="00F6F5F3" border="0" tabitem_hidden="1">
+			<tab_item link_screen="/SYS/pages/ID-002" panel_color="00EBEBEB">
+			</tab_item>
+		</tab>
 	</map>
 </map_list>
