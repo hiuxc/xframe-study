@@ -132,3 +132,32 @@
   margin: -3px 0 0 3px;
   color: #ff1c37;
 }
+._xf_date_edit {
+  font-size: 14px !important;
+}
+._xf_date_button {
+  margin-right: 6px;
+  background: url(../image/calendar.png) center / 20px no-repeat;
+}
+.noBtnRadio {
+  width: fit-content !important;
+}
+.noBtnRadio ._xf_radiogroup_item {
+  width: fit-content;
+  padding: 0 !important;
+  background-image: none;
+}
+.noBtnRadio ._xf_radiogroup_item_label {
+  padding: 6px 16px;
+
+  background-color: #f3f5f7;
+  border: 1px solid #cccccc;
+  border-radius: 16px;
+  color: #999;
+  text-align: center;
+}
+.noBtnRadio ._xf_radiogroup_item_selected ._xf_radiogroup_item_label {
+  background-color: #42444e;
+  border: 1px solid #42444e;
+  color: #fff;
+}

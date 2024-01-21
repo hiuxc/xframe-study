@@ -8,11 +8,11 @@
 	navibar01.additem("모니터링");
 	navibar01.additem("모니터링 대시보드");
 	navibar01.additem("모니터링 현황");	
-	
+	/*
 	navibar02.additem("상품기준정보");
 	navibar02.additem("선물옵션");
 	navibar02.additem("선물");	
-
+*/
 	// 아이템별 배경색 설정
 	/*
 	navibar01.setitembackcolor(0, factory.rgb(0,0,0));
