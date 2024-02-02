@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="내용분류 관리" directory="/SYS/pages/" screenid="ID-001" last_update_date="2024-01-19 15:57:30" width="956" width_type="0" height="1500" height_type="2" back_color="00F6F5F3" transparent="1" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,comboBox_on_click"/>
+		<screen version="2.0" scriptcode="java" title="내용분류 관리" directory="/SYS/pages/" screenid="ID-001" last_update_date="2024-01-23 16:30:25" width="956" width_type="0" height="1500" height_type="2" back_color="00F6F5F3" transparent="1" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,comboBox_on_click"/>
 		<xlinkdataset id="grid_base1" desc="" columns="grd_title:&quot;행 제목&quot;:6:&quot;분류 단계&#x0A;최상위 분류&#x0A;대분류&#x0A;중분류 명&#x0A;분류정의&#x0A;사용여부&#x0A;&quot;:;grd_description:&quot;행 내용&quot;:100:&quot;&#x0A;&#x0A;&#x0A;&#x0A;&#x0A;&#x0A;&quot;:"/>
 		<panel control_id="0" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="956" width_unit="1" height="1500" height_unit="1" custom_class="panel_fit" back_color="00F6F5F3" transparent="0" border="0" title_font="맑은 고딕,9,0,0,0,0">
 			<tab_order order_option="0" order_info="93,94,191"/>
@@ -12,7 +12,7 @@
 			<panel control_id="94" semantic_tag="0" x="0" y="84" right="0" bottom="882" width="956" width_unit="1" height="534" margin="32,32,20,0" custom_class="panel_test" transparent="0" border="0" border_radius="8" title_font="맑은 고딕,9,0,0,0,0">
 				<tab_order order_option="0" order_info="102,144,156"/>
 				<text control_id="95" x="24" y="24" right="848" bottom="486" width="84" height="24" text="기본정보" font="맑은 고딕,16,1,0,0,0" version="1.1"/>
-				<tableview control_id="102" x="0" y="61" right="0" bottom="186" width="956" width_unit="1" height="287" height_type="0" custom_class="grid_width" border_color="00D0B6AE" border_ex="0,1,00D0B6AE,,0,,0,0,1,0,00FFFFFF,00E1E1E1^0,1,00D0B6AE,1^1,0,00D0B6AE,1^1,1,00DDDDDD,1^1,0,00D0B6AE,1" cell_line_vertcolor="00DDDDDD" cell_line_horzcolor="00DDDDDD" row_count="6" column_count="4" row_height="44:px,44:px,44:px,44:px,65:px,44:px" column_width="172:px,282:px,172:px,330:px" autoresize_column="3" design_fixmode="0" mergeinfo="0,1,0,3:1,1,1,3:2,1,2,3:4,1,4,3:5,1,5,3" version="2.0">
+				<tableview control_id="102" x="0" y="61" right="0" bottom="186" width="956" width_type="1" height="287" height_type="0" custom_class="grid_width" border_color="00D0B6AE" border_ex="0,1,00D0B6AE,,0,,0,0,1,0,00FFFFFF,00E1E1E1^0,1,00D0B6AE,1^1,0,00D0B6AE,1^1,1,00DDDDDD,1^1,0,00D0B6AE,1" cell_line_vertcolor="00DDDDDD" cell_line_horzcolor="00DDDDDD" row_count="6" column_count="4" row_height="44:px,44:px,44:px,44:px,65:px,44:px" column_width="172:px,282:px,172:px,34.52:%" pixelheight_resize="0" design_fixmode="0" mergeinfo="0,1,0,3:1,1,1,3:2,1,2,3:4,1,4,3:5,1,5,3" version="2.0">
 					<tab_order order_option="0" order_info="113,115,118,119,120,121"/>
 					<tr>
 						<td back_color="00FBFBFB" rect="0,0,172,44">
@@ -57,13 +57,13 @@
 							<text control_id="106" anchor="4" x="0" y="0" right="0" bottom="0" width="172" width_unit="1" width_type="1" height="43" height_unit="1" custom_class="red_asterisk" text="중분류 명" font="맑은 고딕,14,1,0,0,0" transparent="1" text_margin="16,0,0,0" version="1.1"/>
 						</td>
 						<td rect="173,133,454,176">
-							<hangul_field control_id="118" autosize="0" x="15" y="5" right="16" bottom="6" width="250" height="32" font="맑은 고딕,14,0,0,0,0" border_color="00CCCCCC" border_radius="3" text_margin="12,12,1,1" default_value="옵션"/>
+							<hangul_field control_id="118" autosize="0" x="15" y="5" right="16" bottom="6" width="250" height="32" margin="16,16,0,0" font="맑은 고딕,14,0,0,0,0" border_color="00CCCCCC" border_radius="3" text_margin="12,12,1,1" default_value="옵션"/>
 						</td>
 						<td back_color="00FBFBFB" rect="455,133,626,176">
 							<text control_id="109" anchor="4" x="0" y="0" right="0" bottom="0" width="171" width_unit="1" width_type="1" height="43" height_unit="1" text="관리코드" font="맑은 고딕,14,1,0,0,0" transparent="1" text_margin="16,0,0,0" version="1.1"/>
 						</td>
 						<td rect="627,133,956,176">
-							<hangul_field control_id="119" autosize="0" x="16" y="5" right="16" bottom="6" width="297" height="32" resize_dir="1" font="맑은 고딕,14,0,0,0,0" border_radius="3" text_margin="12,12,1,1" disable_style_use="1" fore_color_disable="00999999" back_color_disable="00F6F5F3" border_color_disable="00CCCCCC" enable="0" default_value="TP105"/>
+							<hangul_field control_id="119" autosize="0" x="0" y="5" right="0" bottom="6" width="329" width_unit="1" height="32" margin="0,0,0,0" custom_class="inner_component" font="맑은 고딕,14,0,0,0,0" border_radius="3" text_margin="12,12,1,1" disable_style_use="1" fore_color_disable="00999999" back_color_disable="00F6F5F3" border_color_disable="00CCCCCC" enable="0" default_value="TP105"/>
 						</td>
 					</tr>
 					<tr>
@@ -71,7 +71,7 @@
 							<text control_id="107" anchor="4" x="0" y="0" right="0" bottom="0" width="172" width_unit="1" width_type="1" height="64" height_unit="1" text="분류정의" font="맑은 고딕,14,1,0,0,0" transparent="1" text_margin="16,0,0,0" version="1.1"/>
 						</td>
 						<td colspan="3" rect="173,177,454,241">
-							<multiline control_id="120" x="16" y="6" right="16" bottom="6" width="751" height="52" resize_dir="3" custom_input_attr="placeholder=&quot;설명정보를 입력하세요.&quot;" font="맑은 고딕,14,0,0,0,0" border_color="00CCCCCC" border_radius="3" text_margin="12,12,6,6" focus_style_use="1" scrollbar_custom_class="txtbox_scrollbar" line_gap="0" max_length="0" meta_maxlength="" escape_newline="0"/>
+							<multiline control_id="120" x="0" y="6" right="0" bottom="6" width="783" width_unit="1" height="52" custom_class="inner_component" custom_input_attr="placeholder=&quot;설명정보를 입력하세요.&quot;" font="맑은 고딕,14,0,0,0,0" border_color="00CCCCCC" border_radius="3" text_margin="12,12,6,6" focus_style_use="1" scrollbar_custom_class="txtbox_scrollbar" line_gap="0" max_length="0" meta_maxlength="" escape_newline="0"/>
 						</td>
 						<td hidden="1" rect="455,177,626,241">
 						</td>
@@ -137,7 +137,7 @@
 					<text control_id="192" position="1" x="24" y="0" right="763" bottom="0" width="169" width_type="1" height="24" text="하위분류 목록" font="맑은 고딕,16,1,0,0,0" text_margin="24,12,0,0" version="1.1"/>
 					<navibar control_id="224" name="navibar02" position="1" anchor="3" x="157" y="4" right="91" bottom="0" width="708" height="20" display_type="0" transparent="1" item_font="맑은 고딕,14,0,0,0,0" item_lastfont="맑은 고딕,14,0,0,0,0" item_forecolor="00202020" item_lastforecolor="00202020" item_textmargin="0,0,0,0" item_sepfont="맑은 고딕,12,1,0,0,0" item_sepwidth="14"/>
 				</panel>
-				<grid control_id="226" anchor="5" x="0" y="60" right="0" bottom="124" width="956" width_unit="1" height="226" margin="0,0,0,0" display_type="0" custom_class="panel_inner grid_base" font="맑은 고딕,13,0,0,0,0" header_backcolor="00FBFBFB" header_font="맑은 고딕,14,1,0,0,0" header_vertcount="0" header_height="45" cell_height="45" cell_dividerowcount="0" cell_linecolor="00DDDDDD" cell_linecolor_horzuse="1" cell_linecolor_horz="00DDDDDD" cell_linecolor_vertuse="1" cell_linecolor_vert="00DDDDDD" cellinner_linecolor_horzuse="1" cellinner_linecolor_horz="00DDDDDD" border_color="00DDDDDD" border_ex="0,1,00DDDDDD,,0,,0,0,1,0,00FFFFFF,00E1E1E1^1,1,00D0B6AE,1^1,1,00DDDDDD,0^1,1,00DDDDDD,0^1,1,00DDDDDD,0" selectrow_backcolor="00F2742E" selectcell_forecolor="00202020" selectcell_backcolor="00F2742E" infocolumn_order="2" linenumber_show="1" linenumber_hd_backcolor="00FBFBFB" linenumber_forecolor="0042444E" linenumber_backcolor="00FFFFFF" linenumber_style="1" linenumber_width="46" use_checkrow="1" multi_checkrow="1" checkrow_statrowstyle="1" checkrow_width="36" checkrow_hd_check_width="20" checkrow_hd_check_height="20" checkrow_hd_check_image="/radio-select_small.png" checkrow_hd_uncheck_image="/radio-unselect_small.png" checkrow_check_width="20" checkrow_check_height="20" checkrow_check_image="/radio-select_small.png" checkrow_uncheck_image="/radio-unselect_small.png" samplerows="4" autocolumnwidth="3" version="1.2">
+				<grid control_id="226" anchor="5" x="0" y="60" right="0" bottom="124" width="956" width_unit="1" height="226" display_type="0" custom_class="panel_inner grid_base" font="맑은 고딕,13,0,0,0,0" header_backcolor="00FBFBFB" header_font="맑은 고딕,14,1,0,0,0" header_vertcount="0" header_height="45" cell_height="45" cell_dividerowcount="0" cell_linecolor="00DDDDDD" cell_linecolor_horzuse="1" cell_linecolor_horz="00DDDDDD" cell_linecolor_vertuse="1" cell_linecolor_vert="00DDDDDD" cellinner_linecolor_horzuse="1" cellinner_linecolor_horz="00DDDDDD" border_color="00DDDDDD" border_ex="0,1,00DDDDDD,,0,,0,0,1,0,00FFFFFF,00E1E1E1^1,1,00D0B6AE,1^1,1,00DDDDDD,0^1,1,00DDDDDD,0^1,1,00DDDDDD,0" selectrow_backcolor="00F2742E" selectcell_forecolor="00202020" selectcell_backcolor="00F2742E" infocolumn_order="2" linenumber_show="1" linenumber_hd_backcolor="00FBFBFB" linenumber_forecolor="0042444E" linenumber_backcolor="00FFFFFF" linenumber_style="1" linenumber_width="46" use_checkrow="1" multi_checkrow="1" checkrow_statrowstyle="1" checkrow_width="36" checkrow_hd_check_width="20" checkrow_hd_check_height="20" checkrow_hd_check_image="/radio-select_small.png" checkrow_hd_uncheck_image="/radio-unselect_small.png" checkrow_check_width="20" checkrow_check_height="20" checkrow_check_image="/radio-select_small.png" checkrow_uncheck_image="/radio-unselect_small.png" scrollbar_button_hidden="1" vertscrollbar_style="0" horzscrollbar_style="0" samplerows="4" autocolumnwidth="3" version="1.2">
 					<column>
 						<header title="분류 명"/>
 						<data width="105" forecolor="00F2742E" font="나눔고딕,10,0,0,1,0" cell_textmargin="8,0,0,0" prefilldata="선물 1&#x0D;&#x0A;선물 2&#x0D;&#x0A;분류명&#x0D;&#x0A;분류명" bargauge_transparent="0"/>

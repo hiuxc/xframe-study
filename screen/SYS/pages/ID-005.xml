@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map_list>
+	<map>
+		<screen version="2.0" scriptcode="java" title="팝업샘플 일반" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-005" last_update_date="2024-01-25 11:54:26" width="468" width_type="0" height="234" height_type="0" on_load="eventfunc:screen_on_load()" funclist="screen_on_load"/>
+		<tab_order order_option="0" order_info="161,215,204,214"/>
+		<text control_id="217" autosize="0" x="6" y="6" right="6" bottom="204" width="456" height="24" text="Description" font="맑은 고딕,12,1,0,0,0" border_ex="0,0,00B4B4B4,,0,,0,0,1,0,00FFFFFF,00E1E1E1^1,0,00B4B4B4,1^1,0,00B4B4B4,1^1,0,00B4B4B4,1^1,6,008B5546,1" text_margin="6,0,0,0" mousehover_font="맑은 고딕,12,1,0,0,0" version="1.1"/>
+		<text control_id="78" autosize="0" x="6" y="36" right="6" bottom="174" width="456" height="24" text="일반 팝업 화면이다." font="맑은 고딕,9,0,0,0,0" mousehover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+		<text control_id="216" autosize="0" x="6" y="66" right="6" bottom="144" width="456" height="24" text="&apos;값 전달 및 닫기&apos; 버튼을 클릭하면 부모화면으로 값을 전달 후 팝업이 닫히게 된다." font="맑은 고딕,9,0,0,0,0" mousehover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+		<text control_id="684" autosize="0" x="6" y="96" right="6" bottom="114" width="456" height="24" text="예시" font="맑은 고딕,12,1,0,0,0" border_ex="0,0,00B4B4B4,,0,,0,0,1,0,00FFFFFF,00E1E1E1^1,0,00B4B4B4,1^1,0,00B4B4B4,1^1,0,00B4B4B4,1^1,6,008B5546,1" text_margin="6,0,0,0" mousehover_font="맑은 고딕,12,1,0,0,0" version="1.1"/>
+		<text control_id="179" autosize="0" x="6" y="132" right="288" bottom="78" width="174" height="24" text="부모화면에서 받은 데이터:" font="맑은 고딕,9,0,0,0,0" mousehover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+		<hangul_field control_id="161" name="fld_param_data" autosize="0" x="198" y="132" right="6" bottom="78" width="264" height="24" font="돋움,9,0,0,0,0" fore_color="00333333" border_color="00AAAAAA" border_color_focus="00FF424C"/>
+		<text control_id="180" autosize="0" x="6" y="168" right="288" bottom="42" width="174" height="24" text="부모화면에 전달할 데이터:" font="맑은 고딕,9,0,0,0,0" mousehover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+		<hangul_field control_id="215" name="fld_return_data" autosize="0" x="198" y="168" right="6" bottom="42" width="264" height="24" font="돋움,9,0,0,0,0" fore_color="00333333" border_color="00AAAAAA" border_color_focus="00FF424C"/>
+		<pushbutton control_id="204" name="btn_close_no_return" x="81" y="204" right="237" bottom="6" width="150" height="24" text="값 전달 없이 닫기" font="돋움,9,0,0,0,0" fore_color="00333333" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+		<pushbutton control_id="214" name="btn_close_return_data" x="237" y="204" right="81" bottom="6" width="150" height="24" text="값 전달 및 닫기" font="돋움,9,0,0,0,0" fore_color="00333333" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+	</map>
+</map_list>

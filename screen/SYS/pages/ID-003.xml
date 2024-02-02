@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map_list>
+	<map>
+		<screen version="2.0" scriptcode="java" title="콘텐츠별 현황" directory="/SYS/pages/" screenid="ID-003" last_update_date="2024-01-23 14:44:01" width="956" width_type="0" height="1170" height_type="0" canvas_height="2000" back_color="00F3F5F6" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,comboBox_on_click,amchart_on_libload,createPieChart2,amchart_on_libload2,createPieChart"/>
+		<tab_order order_option="0" order_info="93,94,156,191"/>
+		<panel control_id="93" semantic_tag="0" x="0" y="0" right="0" bottom="1116" width="956" width_unit="1" height="54" margin="0,0,32,0" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
+			<text control_id="1" position="1" anchor="4" x="0" y="0" right="772" bottom="20" width="184" height="34" margin="32,0,0,0" text="콘텐츠별 현황" font="맑은 고딕,22,1,0,0,0" transparent="1" version="1.1"/>
+			<navibar control_id="92" name="navibar01" position="1" anchor="7" x="248" y="24" right="0" bottom="0" width="708" height="30" margin="0,32,0,0" transparent="1" horz_align="2" item_font="맑은 고딕,14,1,0,0,0" item_lastfont="맑은 고딕,14,1,0,0,0" item_forecolor="00666666" item_textmargin="0,0,0,0" item_sepfont="맑은 고딕,12,1,0,0,0" item_sepwidth="24"/>
+		</panel>
+		<panel control_id="94" semantic_tag="0" x="0" y="74" right="0" bottom="972" width="956" width_unit="1" height="124" margin="32,32,20,0" custom_class="panel_test" transparent="0" border="0" border_radius="8" title_font="맑은 고딕,9,0,0,0,0">
+			<tab_order order_option="0" order_info="161,169"/>
+			<panel control_id="161" semantic_tag="0" x="0" y="24" right="0" bottom="68" width="956" width_unit="1" height="32" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+				<tab_order order_option="0" order_info="113,158,160,121"/>
+				<text control_id="95" x="24" y="4" right="848" bottom="4" width="84" height="24" text="기간검색" font="맑은 고딕,16,1,0,0,0" version="1.1"/>
+				<combobox control_id="113" autosize="0" x="104" y="0" right="732" bottom="0" width="120" height="32" custom_class="customSelect" font="맑은 고딕,14,0,0,0,0" border_color="00CCCCCC" border_radius="3" back_imagevertalign="1" text_margin="12,4,1,1" button_size="28" button_image="/selectBtn.png" default_value="0" combobox_data="del=&apos;:&apos; pos=&apos;0&apos; style=&apos;1&apos; content=&apos;등록일:&#x0D;&#x0A;등록일2:&apos;" picklist_font="맑은 고딕,14,0,0,0,0" version="1.1" on_click="eventfunc:comboBox_on_click(objInst, buttonclick)"/>
+				<datepicker control_id="158" autosize="0" x="230" y="0" right="606" bottom="0" width="120" height="32" font="맑은 고딕,9,0,0,0,0" calendar_font="맑은 고딕,9,0,0,0,0" fore_color="00202020" transparent="0" border_color="00CCCCCC" border_radius="3" text_margin="12,1,1,1" button_size="20" default_value="2023.08.01" delimiter_char="."/>
+				<text control_id="159" x="354" y="10" right="591" bottom="10" width="11" height="12" text="~" font="맑은 고딕,12,0,0,0,0" fore_color="00999999" horz_align="1" vert_align="0" version="1.1"/>
+				<datepicker control_id="160" autosize="0" x="370" y="0" right="466" bottom="0" width="120" height="32" font="맑은 고딕,9,0,0,0,0" calendar_font="맑은 고딕,9,0,0,0,0" fore_color="00202020" transparent="0" border_color="00CCCCCC" border_radius="3" text_margin="12,1,1,1" button_size="20" default_value="2023.08.01" delimiter_char="."/>
+				<radiogroup control_id="121" x="496" y="0" right="260" bottom="0" width="200" height="32" display_type="0" custom_class="noBtnRadio" font="맑은 고딕,14,0,0,0,0" transparent="0" radio_width="24" radio_horzalign="1" text_horzalign="1" text_margin="0,0,0,0" text_wordellipsis="0" drawfocusrect="0" focusrect_bordertype="0" focus_style_use="1" item_transparent="1" item_margin="0,4,0,0" default_value="0" column_count="3" row_count="0" radiogroup_data="del=&apos;:&apos; pos=&apos;0&apos; style=&apos;1&apos; content=&apos;당일:&#x0D;&#x0A;1주일:&#x0D;&#x0A;1개월:&apos;" picklist_style="0"/>
+			</panel>
+			<panel control_id="169" semantic_tag="0" x="0" y="68" right="0" bottom="24" width="956" width_unit="1" height="32" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+				<tab_order order_option="0" order_info="187,188"/>
+				<text control_id="170" x="24" y="0" right="890" bottom="0" width="42" height="32" text="매체" font="맑은 고딕,16,1,0,0,0" version="1.1"/>
+				<text control_id="178" x="372" y="0" right="542" bottom="0" width="42" height="32" text="구분" font="맑은 고딕,16,1,0,0,0" version="1.1"/>
+				<combobox control_id="187" autosize="0" x="84" y="0" right="624" bottom="0" width="248" height="32" custom_class="customSelect" font="맑은 고딕,14,0,0,0,0" border_color="00CCCCCC" border_radius="3" back_imagevertalign="1" text_margin="12,4,1,1" button_size="28" button_image="/selectBtn.png" default_value="0" combobox_data="del=&apos;:&apos; pos=&apos;0&apos; style=&apos;1&apos; content=&apos;마블:&#x0D;&#x0A;등록일2:&apos;" picklist_font="맑은 고딕,14,0,0,0,0" version="1.1" on_click="eventfunc:comboBox_on_click(objInst, buttonclick)"/>
+				<combobox control_id="188" autosize="0" x="452" y="0" right="256" bottom="0" width="248" height="32" custom_class="customSelect" font="맑은 고딕,14,0,0,0,0" border_color="00CCCCCC" border_radius="3" back_imagevertalign="1" text_margin="12,4,1,1" button_size="28" button_image="/selectBtn.png" default_value="0" combobox_data="del=&apos;:&apos; pos=&apos;0&apos; style=&apos;1&apos; content=&apos;마블:&#x0D;&#x0A;등록일2:&apos;" picklist_font="맑은 고딕,14,0,0,0,0" version="1.1" on_click="eventfunc:comboBox_on_click(objInst, buttonclick)"/>
+			</panel>
+		</panel>
+		<panel control_id="156" semantic_tag="0" x="0" y="234" right="0" bottom="900" width="956" width_unit="1" height="36" custom_class="panel_inner" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="center" title_font="맑은 고딕,9,0,0,0,0">
+			<tab_order order_option="0" order_info="154,155"/>
+			<pushbutton control_id="154" position="1" x="0" y="0" right="876" bottom="0" width="80" height="36" style_class="0" text="초기화" font="맑은 고딕,15,1,0,0,0" fore_color="004E4442" border_color="00D0B6AE" border_radius="4" text_margin="12,12,7,7" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+			<pushbutton control_id="155" position="1" x="80" y="0" right="796" bottom="0" width="80" height="36" margin="6,0,0,0" style_class="0" text="검색" font="맑은 고딕,15,1,0,0,0" fore_color="004E4442" back_color="0000DCFF" border="4" border_color="00D0B6AE" border_radius="4" text_margin="12,12,7,7" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+		</panel>
+		<panel control_id="191" semantic_tag="0" x="0" y="286" right="0" bottom="80" width="956" width_unit="1" height="804" margin="32,32,20,0" custom_class="panel_test" transparent="0" border="0" border_radius="8" title_font="맑은 고딕,9,0,0,0,0">
+			<tab_order order_option="0" order_info="289,301"/>
+			<panel control_id="289" semantic_tag="0" x="0" y="0" right="0" bottom="760" width="956" width_unit="1" height="44" transparent="1" border="0" content_display_type="2" content_flex_alignitems="end" content_flex_justifycontent="start" panel_width="708" panel_height="32" title_font="맑은 고딕,9,0,0,0,0">
+				<text control_id="296" position="1" x="24" y="24" right="849" bottom="0" width="83" width_type="1" height="20" margin="24,0,0,0" text="전체 누적" font="맑은 고딕,14,1,0,0,0" transparent="1" version="1.1"/>
+				<text control_id="295" autosize="0" position="1" x="83" y="24" right="829" bottom="0" width="44" width_type="1" height="20" margin="6,0,0,0" text="1,000" font="맑은 고딕,14,0,0,0,0" fore_color="00F2742E" transparent="1" version="1.1"/>
+				<text control_id="294" position="1" x="127" y="24" right="810" bottom="0" width="19" width_type="1" height="20" text="개" font="맑은 고딕,14,0,0,0,0" fore_color="00202020" transparent="1" version="1.1"/>
+				<text control_id="293" position="1" x="146" y="24" right="702" bottom="0" width="108" width_type="1" height="20" margin="0,6,0,0" custom_class="has-line2" text="조회 기간" font="맑은 고딕,14,1,0,0,0" transparent="1" text_margin="25,0,0,0" version="1.1"/>
+				<text control_id="292" autosize="0" position="1" x="229" y="24" right="639" bottom="0" width="88" width_type="1" height="20" text="2023.08.01" font="맑은 고딕,14,0,0,0,0" fore_color="00F2742E" transparent="1" version="1.1"/>
+				<text control_id="291" position="1" x="317" y="24" right="626" bottom="0" width="13" width_type="1" height="20" margin="4,4,0,0" text="~" font="맑은 고딕,14,0,0,0,0" fore_color="00202020" transparent="1" version="1.1"/>
+				<text control_id="290" autosize="0" position="1" x="330" y="24" right="538" bottom="0" width="88" width_type="1" height="20" text="2023.10.01" font="맑은 고딕,14,0,0,0,0" fore_color="00F2742E" transparent="1" version="1.1"/>
+			</panel>
+			<panel control_id="301" semantic_tag="0" x="0" y="60" right="0" bottom="25" width="956" width_unit="1" height="719" margin="24,0,0,0" custom_class="panel_inner" back_color="00FEE9FF" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="center" title_font="맑은 고딕,9,0,0,0,0">
+				<tab_order order_option="0" order_info="302,304"/>
+				<panel control_id="302" semantic_tag="0" position="1" x="0" y="0" right="478" bottom="0" width="478" width_percent="50" width_unit="1" height="719" height_unit="1" margin="0,24,0,0" transparent="1" border="0" content_display_type="2" content_flex_direction="column" title_font="맑은 고딕,9,0,0,0,0">
+					<tab_order order_option="0" order_info="306,309"/>
+					<panel control_id="306" semantic_tag="0" position="1" x="0" y="0" right="0" bottom="687" width="478" width_unit="1" height="32" back_color="0010007B" transparent="1" border="0" content_display_type="2" content_flex_alignitems="center" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
+						<tab_order order_option="0" order_info="253"/>
+						<text control_id="305" position="1" x="0" y="0" right="373" bottom="8" width="105" width_type="1" height="24" text="카테고리별" font="맑은 고딕,16,1,0,0,0" transparent="1" version="1.1"/>
+						<pushbutton control_id="253" position="1" x="353" y="0" right="0" bottom="0" width="125" height="32" style_class="0" text="엑셀 다운로드" font="맑은 고딕,14,0,0,0,0" fore_color="004E4442" border_color="00D0B6AE" border_radius="2" image_normal="/button_download.png" image_vert_align="1" image_margin="12,0,0,0" text_margin="32,16,0,0" hover_font="맑은 고딕,9,0,0,0,0" letter_spacing="-2px" version="1.1"/>
+					</panel>
+					<amcharts5 control_id="308" name="amchart" position="1" x="0" y="40" right="0" bottom="418" width="478" width_unit="1" height="261" margin="0,0,8,0" custom_class="amchart" border="0" chart_type="2" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
+					<grid control_id="309" position="1" x="0" y="318" right="0" bottom="0" width="478" width_unit="1" height="401" margin="0,0,16,0" font="맑은 고딕,14,0,0,0,0" header_backcolor="00FBFBFB" header_font="맑은 고딕,9,0,0,0,0" header_vertcount="0" header_height="40" cell_height="36" cell_dividecolor_use="0" cell_dividecolor="00DDDDDD" cell_linecolor="00DDDDDD" border="0" linenumber_show="1" linenumber_title="" linenumber_backcolor="00FFFFFF" linenumber_style="1" linenumber_width="56" scrollbar_button_hidden="1" vertscrollbar_style="0" samplerows="11" autocolumnwidth="3" version="1.2">
+						<column>
+							<header title="카테고리"/>
+							<data width="194" text_horzalign="1" prefilldata="1분 브리핑&#x0D;&#x0A;투자상식&#x0D;&#x0A;쇼미더수익&#x0D;&#x0A;해외상식&#x0D;&#x0A;용어사전&#x0D;&#x0A;절세전략&#x0D;&#x0A;내돈관리&#x0D;&#x0A;부자&#x0D;&#x0A;부동산&#x0D;&#x0A;투자전략&#x0D;&#x0A;" bargauge_transparent="0"/>
+						</column>
+						<column>
+							<header title="등록 수"/>
+							<data width="96" forecolor="00F2742E" text_horzalign="1" prefilldata="20&#x0D;&#x0A;18&#x0D;&#x0A;7&#x0D;&#x0A;20&#x0D;&#x0A;1&#x0D;&#x0A;6&#x0D;&#x0A;8&#x0D;&#x0A;1&#x0D;&#x0A;7&#x0D;&#x0A;16" bargauge_transparent="0"/>
+						</column>
+						<column>
+							<header title="비율"/>
+							<data width="96" text_horzalign="1" prefilldata="20%&#x0D;&#x0A;18%&#x0D;&#x0A;7%&#x0D;&#x0A;20%&#x0D;&#x0A;7%&#x0D;&#x0A;6%&#x0D;&#x0A;8%&#x0D;&#x0A;7%&#x0D;&#x0A;7%&#x0D;&#x0A;16%" bargauge_transparent="0"/>
+						</column>
+						<headermegeinfo info=""/>
+					</grid>
+				</panel>
+				<panel control_id="304" semantic_tag="0" position="1" x="478" y="0" right="0" bottom="0" width="478" width_percent="50" width_unit="1" height="719" height_unit="1" transparent="1" border="0" content_display_type="2" content_flex_direction="column" title_font="맑은 고딕,9,0,0,0,0">
+					<tab_order order_option="0" order_info="310,314"/>
+					<panel control_id="310" semantic_tag="0" position="1" x="0" y="0" right="0" bottom="687" width="478" width_unit="1" height="32" back_color="0010007B" transparent="1" border="0" content_display_type="2" content_flex_alignitems="center" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
+						<tab_order order_option="0" order_info="317,311"/>
+						<combobox control_id="317" autosize="0" position="1" x="0" y="0" right="358" bottom="8" width="120" height="24" font="맑은 고딕,16,1,0,0,0" transparent="1" border="0" button_size="24" button_image="/bottom_arrow.png" letter_spacing="-2px" default_value="0" combobox_data="del=&apos;:&apos; pos=&apos;0&apos; style=&apos;1&apos; content=&apos;콘텐츠&amp;#20주제별:&#x0D;&#x0A;옵션2:&apos;" picklist_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+						<pushbutton control_id="311" position="1" x="353" y="0" right="0" bottom="0" width="125" height="32" style_class="0" text="엑셀 다운로드" font="맑은 고딕,14,0,0,0,0" fore_color="004E4442" border_color="00D0B6AE" border_radius="2" image_normal="/button_download.png" image_vert_align="1" image_margin="12,0,0,0" text_margin="32,16,0,0" hover_font="맑은 고딕,9,0,0,0,0" letter_spacing="-2px" version="1.1"/>
+					</panel>
+					<amcharts5 control_id="313" name="amchart2" position="1" x="0" y="40" right="0" bottom="418" width="478" width_unit="1" height="261" margin="0,0,8,0" custom_class="amchart" border="0" chart_type="2" on_libload="eventfunc:amchart_on_libload2(objInst, chart_type)"/>
+					<grid control_id="314" position="1" x="0" y="319" right="0" bottom="0" width="478" width_unit="1" height="400" margin="0,0,16,0" font="맑은 고딕,14,0,0,0,0" header_backcolor="00FBFBFB" header_font="맑은 고딕,9,0,0,0,0" header_vertcount="0" header_height="40" cell_height="36" cell_dividecolor_use="0" cell_dividecolor="00DDDDDD" cell_linecolor="00DDDDDD" border="0" linenumber_show="1" linenumber_title="" linenumber_backcolor="00FFFFFF" linenumber_style="1" linenumber_width="56" autocolumnwidth="3" version="1.2">
+						<column>
+							<header title="카테고리"/>
+							<data width="194" text_horzalign="1" prefilldata="주식&#x0D;&#x0A;ETF&#x0D;&#x0A;금융상품&#x0D;&#x0A;자산배분&#x0D;&#x0A;부동산&#x0D;&#x0A;세무&#x0D;&#x0A;재테크&#x0D;&#x0A;" bargauge_transparent="0"/>
+						</column>
+						<column>
+							<header title="등록 수"/>
+							<data width="96" forecolor="00F2742E" text_horzalign="1" prefilldata="51&#x0D;&#x0A;6&#x0D;&#x0A;17&#x0D;&#x0A;5&#x0D;&#x0A;7&#x0D;&#x0A;6&#x0D;&#x0A;8" bargauge_transparent="0"/>
+						</column>
+						<column>
+							<header title="비율"/>
+							<data width="96" text_horzalign="1" prefilldata="51%&#x0D;&#x0A;6%&#x0D;&#x0A;7%&#x0D;&#x0A;5%&#x0D;&#x0A;7%&#x0D;&#x0A;6%&#x0D;&#x0A;8%" bargauge_transparent="0"/>
+						</column>
+						<headermegeinfo info=""/>
+					</grid>
+				</panel>
+			</panel>
+		</panel>
+	</map>
+</map_list>

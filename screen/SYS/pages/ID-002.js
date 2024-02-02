@@ -1,6 +1,5 @@
 ﻿function screen_on_load()
 {
-	
 	navibar01.deleteallitem();
 	
 	// 아이템 추가
@@ -65,7 +64,20 @@
 		let gridParent = $(this).closest("._xf_grid").css("font-size");
 		$(this).css("font-size", gridParent);  		
 	})
+
+  $("body").on("click", ".close", function () {
+    $(this).parents(".popup").hide();
+  });
+  $("body").on("click", ".closePopup", function () {
+    if ($(this).parents(".popup").hasClass("open")) {
+      return false;
+    } else {
+      $(this).parents(".popup").hide();
+    }
+  });
+
 }
+
 
 function comboBox_on_click(objInst, buttonclick)
 {
@@ -75,5 +87,13 @@ function comboBox_on_click(objInst, buttonclick)
 		let thisParent2 = $(this).closest("._xf_screen_selectbox").css("font-size");				
 		$(this).css("font-size", thisParent2);  
 	});
-	
+}
+
+
+function popClose_1(objInst){
+	$('.popBg').hide();
+}
+function popOpen_1(objInst){
+	$('.popBg').show();
+	$('.popBg').css("visibility", "visible")
 }
