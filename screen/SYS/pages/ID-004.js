@@ -1,5 +1,6 @@
 ﻿function screen_on_load()
 {
+	
 	navibar01.deleteallitem();
 	
 	// 아이템 추가
@@ -21,7 +22,7 @@
 	navibar01.setitembackcolor(4, factory.rgb(238,245,255));
 	*/
 	
-	/*
+	
 	function convertPtToPx(ptSize) {
 		return ptSize / 1.33;
 	}
@@ -64,62 +65,9 @@
 		let gridParent = $(this).closest("._xf_grid").css("font-size");
 		$(this).css("font-size", gridParent);  		
 	})
-
-  $("body").on("click", ".close", function () {
-    $(this).parents(".popup").hide();
-  });
-  $("body").on("click", ".closePopup", function () {
-    if ($(this).parents(".popup").hasClass("open")) {
-      return false;
-    } else {
-      $(this).parents(".popup").hide();
-    }
-  });
-
 }
 
-
-function comboBox_on_click(objInst, buttonclick)
+function btn_addfile_on_mouseup(objInst)
 {
-	var comboTxt = $("._xf_screen_selectbox_item_text")			
-		console.log(comboTxt)
-	comboTxt.each(function(){
-		let thisParent2 = $(this).closest("._xf_screen_selectbox").css("font-size");				
-		$(this).css("font-size", thisParent2);  
-	});
-<<<<<<< HEAD
-	*/
-	
-	
-
-}
-
-
-function plusmonth_on_mouseup(objInst)
-{
-	let today = getToday();
-function getToday() {
-    let date = new Date();
-    let year = date.getFullYear();
-    let month = date.getMonth() + 1;
-    let day = date.getDate();    
-    return year + setDateZero(month) + setDateZero(day);
-}
-console.log(today)
-	
-//날짜 자릿수 맞추기
-function setDateZero(date){
-    return date < 10 ? '0' + date : date;
-}
-=======
-}
-
-
-function popClose_1(objInst){
-	$('.popBg').hide();
-}
-function popOpen_1(objInst){
-	$('.popBg').show();
-	$('.popBg').css("visibility", "visible")
->>>>>>> afba705cd8405fdd0b704828ca9fb7f702bf53a6
+	uploader_basic.addfile();
 }

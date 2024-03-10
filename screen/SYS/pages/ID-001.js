@@ -77,4 +77,3 @@ function comboBox_on_click(objInst, buttonclick)
 	});
 	
 }
-

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map_list>
+	<map>
+		<screen version="2.0" scriptcode="java" title="콘텐츠별 현황" directory="/SYS/pages/" screenid="ID-004" last_update_date="2024-01-23 17:32:15" width="956" width_type="0" height="1170" height_type="0" canvas_height="2000" back_color="00F3F5F6" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,btn_addfile_on_mouseup"/>
+		<tab_order order_option="0" order_info="93,191"/>
+		<panel control_id="93" semantic_tag="0" x="0" y="0" right="0" bottom="1116" width="956" width_unit="1" height="54" margin="0,0,32,0" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
+			<text control_id="1" position="1" anchor="4" x="0" y="0" right="772" bottom="20" width="184" height="34" margin="32,0,0,0" text="콘텐츠별 현황" font="맑은 고딕,22,1,0,0,0" transparent="1" version="1.1"/>
+			<navibar control_id="92" name="navibar01" position="1" anchor="7" x="248" y="24" right="0" bottom="0" width="708" height="30" margin="0,32,0,0" transparent="1" horz_align="2" item_font="맑은 고딕,14,1,0,0,0" item_lastfont="맑은 고딕,14,1,0,0,0" item_forecolor="00666666" item_textmargin="0,0,0,0" item_sepfont="맑은 고딕,12,1,0,0,0" item_sepwidth="24"/>
+		</panel>
+		<panel control_id="191" semantic_tag="0" x="0" y="74" right="0" bottom="292" width="956" width_unit="1" height="804" margin="32,32,20,0" custom_class="panel_test" transparent="0" border="0" border_radius="8" title_font="맑은 고딕,9,0,0,0,0">
+			<tableview control_id="318" anchor="6" x="0" y="28" right="0" bottom="29" width="956" width_unit="1" width_type="1" height="747" height_type="0" margin="0,0,0,0" custom_class="panel_inner" border="0" border_ex="0,0,00B4B4B4,,0,,0,0,1,0,00FFFFFF,00E1E1E1^1,1,00DDDDDD,1^0,0,00B4B4B4,1^1,1,00DDDDDD,1^0,0,00B4B4B4,1" cell_line_vertcolor="00DDDDDD" cell_line_horzcolor="00DDDDDD" row_count="6" column_count="2" row_height="44:px,83:px,132:px,132:px,232:px,122:px" column_width="232:px,75.73:%" pixelwidth_resize="0" design_fixmode="0" version="2.0">
+				<tab_order order_option="0" order_info="338,343,346,325,347,353,326,350,355,332,357,360,335,377,380,381"/>
+				<tr>
+					<td style="header_basic_bg" rect="0,0,232,44">
+						<text control_id="106" anchor="4" x="0" y="0" right="0" bottom="0" width="232" width_unit="1" width_type="1" height="44" height_unit="1" text="파일첨부" font="맑은 고딕,14,1,0,0,0" transparent="1" text_margin="16,0,0,0" version="1.1"/>
+					</td>
+					<td rect="233,0,956,44">
+						<pushbutton control_id="338" name="btn_addfile" anchor="4" x="16" y="6" right="626" bottom="6" width="81" height="32" text="첨부하기" font="맑은 고딕,14,0,0,0,0" border_color="00D0B6AE" border_radius="2" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_addfile_on_mouseup(objInst)"/>
+						<text control_id="339" anchor="4" x="107" y="16" right="48" bottom="16" width="568" height="12" text="첨부파일은 최대 10MB, 1개까지 pdf 확장자만 등록할 수 있습니다." font="맑은 고딕,14,0,0,0,0" fore_color="00666666" version="1.1"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="header_basic_bg" rect="0,45,232,127">
+						<text control_id="319" anchor="4" x="0" y="0" right="0" bottom="0" width="232" width_unit="1" width_type="1" height="82" height_unit="1" text="파일첨부(일반첨부)" font="맑은 고딕,14,1,0,0,0" transparent="1" text_margin="16,0,0,0" version="1.1"/>
+					</td>
+					<td rect="233,45,956,127">
+						<panel control_id="343" semantic_tag="0" x="0" y="7" right="0" bottom="43" width="723" width_unit="1" height="32" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+							<tab_order order_option="0" order_info="340"/>
+							<text control_id="341" anchor="4" x="107" y="10" right="48" bottom="10" width="568" height="12" text="첨부파일은 최대 10MB, 1개까지 pdf 확장자만 등록할 수 있습니다." font="맑은 고딕,14,0,0,0,0" fore_color="00666666" version="1.1"/>
+							<pushbutton control_id="340" anchor="4" x="16" y="0" right="626" bottom="0" width="81" height="32" text="첨부하기" font="맑은 고딕,14,0,0,0,0" border_color="00D0B6AE" border_radius="2" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_addfile_on_mouseup(objInst)"/>
+						</panel>
+						<pushbutton control_id="346" x="16" y="45" right="557" bottom="5" width="150" height="32" style_class="0" text="upload_file3.pdf" font="맑은 고딕,14,0,0,0,0" fore_color="00666666" back_color="00F6F5F3" border="4" image_normal="/delete_item.png" image_horz_align="2" image_vert_align="1" image_margin="0,12,0,0" horz_align="0" text_margin="12,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="header_basic_bg" rect="0,128,232,259">
+						<panel control_id="325" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="232" height="131" height_unit="1" margin="16,0,0,0" transparent="1" border="0" content_display_type="2" content_flex_direction="column" content_flex_alignitems="start" content_flex_justifycontent="center" title_font="맑은 고딕,9,0,0,0,0">
+							<text control_id="320" position="1" x="0" y="0" right="0" bottom="111" width="232" width_unit="1" width_type="1" height="20" height_percent="50" text="파일첨부(Drag&amp;Drop)" font="맑은 고딕,14,1,0,0,0" transparent="1" version="1.1"/>
+							<text control_id="324" position="1" x="0" y="20" right="123" bottom="92" width="109" height="19" text="*단일파일 1개" font="맑은 고딕,13,1,0,0,0" fore_color="00999999" transparent="1" version="1.1"/>
+						</panel>
+					</td>
+					<td rect="233,128,956,259">
+						<panel control_id="347" semantic_tag="0" x="0" y="7" right="0" bottom="92" width="723" width_unit="1" height="32" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+							<tab_order order_option="0" order_info="349"/>
+							<text control_id="348" anchor="4" x="107" y="10" right="48" bottom="10" width="568" height="12" text="첨부파일은 최대 10MB, 1개까지 pdf 확장자만 등록할 수 있습니다." font="맑은 고딕,14,0,0,0,0" fore_color="00666666" version="1.1"/>
+							<pushbutton control_id="349" anchor="4" x="16" y="0" right="626" bottom="0" width="81" height="32" text="첨부하기" font="맑은 고딕,14,0,0,0,0" border_color="00D0B6AE" border_radius="2" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_addfile_on_mouseup(objInst)"/>
+						</panel>
+						<panel control_id="353" semantic_tag="0" x="0" y="45" right="0" bottom="5" width="723" width_unit="1" height="81" custom_class="inner_component" back_color="00FBFBFB" transparent="0" border="1" border_color="00CCCCCC" border_radius="3" border_ex="0,1,00CCCCCC,,0,,0,0,2,0,00FFFFFF,00E1E1E1^0,1,00CCCCCC,1^0,1,00CCCCCC,1^0,1,00CCCCCC,1^0,1,00CCCCCC,1" title_font="맑은 고딕,9,0,0,0,0">
+							<text control_id="354" anchor="6" x="66" y="33" right="67" bottom="34" width="588" height="12" text="첨부하기 버튼을 클릭하거나, Drag&amp;Drop으로 파일을 업로드 하세요." font="맑은 고딕,14,0,0,0,0" fore_color="00999999" transparent="1" version="1.1"/>
+						</panel>
+					</td>
+				</tr>
+				<tr>
+					<td style="header_basic_bg" rect="0,260,232,391">
+						<panel control_id="326" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="232" height="131" height_unit="1" margin="16,0,0,0" transparent="1" border="0" content_display_type="2" content_flex_direction="column" content_flex_alignitems="start" content_flex_justifycontent="center" title_font="맑은 고딕,9,0,0,0,0">
+							<text control_id="327" position="1" x="0" y="0" right="0" bottom="111" width="232" width_unit="1" width_type="1" height="20" height_percent="50" text="파일첨부(Drag&amp;Drop)" font="맑은 고딕,14,1,0,0,0" transparent="1" version="1.1"/>
+							<text control_id="328" position="1" x="0" y="20" right="123" bottom="92" width="109" height="19" text="*다중파일 2개" font="맑은 고딕,13,1,0,0,0" fore_color="00999999" transparent="1" version="1.1"/>
+						</panel>
+					</td>
+					<td rect="233,260,956,391">
+						<panel control_id="350" semantic_tag="0" x="0" y="7" right="0" bottom="92" width="723" width_unit="1" height="32" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+							<tab_order order_option="0" order_info="352"/>
+							<text control_id="351" anchor="4" x="107" y="10" right="48" bottom="10" width="568" height="12" text="첨부파일은 최대 10MB, 1개까지 pdf 확장자만 등록할 수 있습니다." font="맑은 고딕,14,0,0,0,0" fore_color="00666666" version="1.1"/>
+							<pushbutton control_id="352" anchor="4" x="16" y="0" right="626" bottom="0" width="81" height="32" text="첨부하기" font="맑은 고딕,14,0,0,0,0" border_color="00D0B6AE" border_radius="2" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:btn_addfile_on_mouseup(objInst)"/>
+						</panel>
+						<panel control_id="355" semantic_tag="0" x="0" y="45" right="0" bottom="5" width="723" width_unit="1" height="81" custom_class="inner_component" back_color="00FBFBFB" transparent="0" border="1" border_color="00CCCCCC" border_radius="3" border_ex="0,1,00CCCCCC,,0,,0,0,2,0,00FFFFFF,00E1E1E1^0,1,00CCCCCC,1^0,1,00CCCCCC,1^0,1,00CCCCCC,1^0,1,00CCCCCC,1" title_font="맑은 고딕,9,0,0,0,0">
+							<text control_id="356" anchor="6" x="66" y="33" right="67" bottom="34" width="588" height="12" text="첨부하기 버튼을 클릭하거나, Drag&amp;Drop으로 파일을 업로드 하세요." font="맑은 고딕,14,0,0,0,0" fore_color="00999999" transparent="1" version="1.1"/>
+						</panel>
+					</td>
+				</tr>
+				<tr>
+					<td style="header_basic_bg" rect="0,392,232,623">
+						<panel control_id="332" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="232" height="231" height_unit="1" margin="16,0,0,0" transparent="1" border="0" content_display_type="2" content_flex_direction="column" content_flex_alignitems="start" content_flex_justifycontent="center" title_font="맑은 고딕,9,0,0,0,0">
+							<text control_id="333" position="1" x="0" y="0" right="0" bottom="211" width="232" width_unit="1" width_type="1" height="20" height_percent="50" text="파일첨부(Drag&amp;Drop)" font="맑은 고딕,14,1,0,0,0" transparent="1" version="1.1"/>
+							<text control_id="334" position="1" x="0" y="20" right="48" bottom="192" width="184" height="19" text="*다중파일 파열영역목록" font="맑은 고딕,13,1,0,0,0" fore_color="00999999" transparent="1" version="1.1"/>
+						</panel>
+					</td>
+					<td rect="233,392,956,623">
+						<panel control_id="357" semantic_tag="0" x="0" y="7" right="0" bottom="192" width="723" width_unit="1" height="32" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+							<tab_order order_option="0" order_info="359"/>
+							<text control_id="358" anchor="4" x="107" y="10" right="48" bottom="10" width="568" height="12" text="첨부파일은 최대 10MB, 1개까지 pdf 확장자만 등록할 수 있습니다." font="맑은 고딕,14,0,0,0,0" fore_color="00666666" version="1.1"/>
+							<pushbutton control_id="359" anchor="4" x="16" y="0" right="626" bottom="0" width="81" height="32" text="첨부하기" font="맑은 고딕,14,0,0,0,0" border_color="00D0B6AE" border_radius="2" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+						</panel>
+						<tableview control_id="360" x="0" y="45" right="0" bottom="9" width="723" width_unit="1" height="177" height_type="0" custom_class="inner_component" border_color="00DDDDDD" border_radius="4" row_count="5" column_count="3" row_height="35:px,35:px,35:px,35:px,35:px" column_width="72.68:%,116:px,81:px" pixelwidth_resize="0" design_fixmode="0" version="2.0">
+							<tab_order order_option="0" order_info="373,374,375,376"/>
+							<tr>
+								<td style="header_basic_bg" rect="0,0,524,35">
+									<text control_id="361" anchor="6" x="0" y="0" right="0" bottom="0" width="524" width_unit="1" height="35" height_unit="1" text="파일명" font="맑은 고딕,13,1,0,0,0" transparent="1" horz_align="1" version="1.1"/>
+								</td>
+								<td style="header_basic_bg" rect="525,0,640,35">
+									<text control_id="362" anchor="6" x="0" y="0" right="0" bottom="0" width="115" width_unit="1" height="35" height_unit="1" text="용량" font="맑은 고딕,13,1,0,0,0" transparent="1" horz_align="1" version="1.1"/>
+								</td>
+								<td style="header_basic_bg" rect="641,0,721,35">
+									<text control_id="363" anchor="6" x="0" y="0" right="0" bottom="0" width="80" width_unit="1" height="35" height_unit="1" text="삭제" font="맑은 고딕,13,1,0,0,0" transparent="1" horz_align="1" version="1.1"/>
+								</td>
+							</tr>
+							<tr>
+								<td rect="0,36,524,70">
+									<text control_id="364" anchor="4" x="0" y="0" right="0" bottom="0" width="524" width_unit="1" width_type="1" height="34" height_unit="1" text="upload_file_1.pdf" font="맑은 고딕,13,0,0,0,0" text_margin="12,0,0,0" version="1.1"/>
+								</td>
+								<td rect="525,36,640,70">
+									<text control_id="368" anchor="6" x="0" y="0" right="0" bottom="0" width="115" width_unit="1" width_type="1" height="34" height_unit="1" text="1542 byte" font="맑은 고딕,13,0,0,0,0" version="1.1"/>
+								</td>
+								<td rect="641,36,721,70">
+									<pushbutton control_id="373" anchor="6" x="30" y="7" right="30" bottom="7" width="20" height="20" style_class="0" text="" font="맑은 고딕,9,0,0,0,0" transparent="1" border="4" image_normal="/delete_item.png" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+								</td>
+							</tr>
+							<tr>
+								<td rect="0,71,524,105">
+									<text control_id="365" anchor="4" x="0" y="0" right="0" bottom="0" width="524" width_unit="1" width_type="1" height="34" height_unit="1" text="upload_file_2.pdf" font="맑은 고딕,13,0,0,0,0" text_margin="12,0,0,0" version="1.1"/>
+								</td>
+								<td rect="525,71,640,105">
+									<text control_id="369" anchor="6" x="0" y="0" right="0" bottom="0" width="115" width_unit="1" width_type="1" height="34" height_unit="1" text="1542 byte" font="맑은 고딕,13,0,0,0,0" version="1.1"/>
+								</td>
+								<td rect="641,71,721,105">
+									<pushbutton control_id="374" anchor="6" x="30" y="7" right="30" bottom="7" width="20" height="20" style_class="0" text="" font="맑은 고딕,9,0,0,0,0" transparent="1" border="4" image_normal="/delete_item.png" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+								</td>
+							</tr>
+							<tr>
+								<td rect="0,106,524,140">
+									<text control_id="366" anchor="4" x="0" y="0" right="0" bottom="0" width="524" width_unit="1" width_type="1" height="34" height_unit="1" text="upload_file_3.pdf" font="맑은 고딕,13,0,0,0,0" text_margin="12,0,0,0" version="1.1"/>
+								</td>
+								<td rect="525,106,640,140">
+									<text control_id="370" anchor="6" x="0" y="0" right="0" bottom="0" width="115" width_unit="1" width_type="1" height="34" height_unit="1" text="1542 byte" font="맑은 고딕,13,0,0,0,0" version="1.1"/>
+								</td>
+								<td rect="641,106,721,140">
+									<pushbutton control_id="375" anchor="6" x="30" y="7" right="30" bottom="7" width="20" height="20" style_class="0" text="" font="맑은 고딕,9,0,0,0,0" transparent="1" border="4" image_normal="/delete_item.png" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+								</td>
+							</tr>
+							<tr>
+								<td rect="0,141,524,175">
+									<text control_id="367" anchor="4" x="0" y="0" right="0" bottom="0" width="524" width_unit="1" width_type="1" height="34" height_unit="1" text="upload_file_4.pdf" font="맑은 고딕,13,0,0,0,0" text_margin="12,0,0,0" version="1.1"/>
+								</td>
+								<td rect="525,141,640,175">
+									<text control_id="371" anchor="6" x="0" y="0" right="0" bottom="0" width="115" width_unit="1" width_type="1" height="34" height_unit="1" text="1542 byte" font="맑은 고딕,13,0,0,0,0" version="1.1"/>
+								</td>
+								<td rect="641,141,721,175">
+									<pushbutton control_id="376" anchor="6" x="30" y="7" right="30" bottom="7" width="20" height="20" style_class="0" text="" font="맑은 고딕,9,0,0,0,0" transparent="1" border="4" image_normal="/delete_item.png" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+								</td>
+							</tr>
+						</tableview>
+					</td>
+				</tr>
+				<tr>
+					<td style="header_basic_bg" rect="0,624,232,745">
+						<panel control_id="335" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="232" height="121" height_unit="1" margin="16,0,0,0" transparent="1" border="0" content_display_type="2" content_flex_direction="column" content_flex_alignitems="start" content_flex_justifycontent="center" title_font="맑은 고딕,9,0,0,0,0">
+							<text control_id="336" position="1" x="0" y="0" right="0" bottom="101" width="232" width_unit="1" width_type="1" height="20" height_percent="50" text="파일첨부(Drag&amp;Drop)" font="맑은 고딕,14,1,0,0,0" transparent="1" version="1.1"/>
+							<text control_id="337" position="1" x="0" y="20" right="81" bottom="82" width="151" height="19" text="*Thumbnail 제공시" font="맑은 고딕,13,1,0,0,0" fore_color="00999999" transparent="1" version="1.1"/>
+						</panel>
+					</td>
+					<td rect="233,624,956,745">
+						<panel control_id="377" semantic_tag="0" x="0" y="7" right="0" bottom="82" width="723" width_unit="1" height="32" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+							<tab_order order_option="0" order_info="379"/>
+							<text control_id="378" autosize="0" anchor="4" x="107" y="10" right="116" bottom="10" width="500" height="12" text="첨부파일은 최대 50MB, 5개까지 png, jpg, jpeg, bmp, gif 확장자만 등록할 수 있습니다." font="맑은 고딕,14,0,0,0,0" fore_color="00202020" version="1.1"/>
+							<pushbutton control_id="379" anchor="4" x="16" y="0" right="626" bottom="0" width="81" height="32" text="첨부하기" font="맑은 고딕,14,0,0,0,0" border_color="00D0B6AE" border_radius="2" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+						</panel>
+						<pushbutton control_id="380" x="16" y="45" right="557" bottom="44" width="150" height="32" style_class="0" text="upload_file3.pdf" font="맑은 고딕,14,0,0,0,0" fore_color="00666666" back_color="00F6F5F3" border="4" image_normal="/delete_item.png" image_horz_align="2" image_vert_align="1" image_margin="0,12,0,0" horz_align="0" text_margin="12,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+						<pushbutton control_id="381" x="16" y="83" right="557" bottom="6" width="150" height="32" style_class="0" custom_class="uploaded_png" text="upload_file3.pdf" font="맑은 고딕,14,0,0,0,0" fore_color="00666666" back_color="00F6F5F3" border="4" image_normal="/delete_item.png" image_horz_align="2" image_vert_align="1" image_margin="0,12,0,0" horz_align="0" text_margin="12,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1"/>
+					</td>
+				</tr>
+			</tableview>
+		</panel>
+		<hidden_screen>
+			<uploader control_id="120" name="uploader_basic" x="956" y="0" width="28" height="28" hidden="1"/>
+		</hidden_screen>
+	</map>
+</map_list>

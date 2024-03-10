@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="KB_CMS_MAIN" screenid="main" last_update_date="2024-01-19 17:57:57" width="1280" width_type="0" height="800" height_type="0" back_color="00F6F5F3" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,btn_vert_depth2_1_on_mouseup,btn_vert_fold_1_on_mouseup,btn_vert_fold_2_on_mouseup,btn_vert_fold_3_on_mouseup,btn_vert_fold_4_on_mouseup,btn_getxdatasetvalue_on_mouseup,btn_addstring_on_mouseup,btn_setpicklist_on_mouseup,btn_getselectedcode_on_mouseup,btn_setselectedcode_on_mouseup,cbo_basic_on_itemchange"/>
+		<screen version="2.0" scriptcode="java" title="KB_CMS_MAIN" screenid="main" last_update_date="2024-01-22 17:54:05" width="1280" width_type="0" height="800" height_type="0" back_color="00F6F5F3" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,btn_vert_depth2_1_on_mouseup,btn_vert_fold_1_on_mouseup,btn_vert_fold_2_on_mouseup,btn_vert_fold_3_on_mouseup,btn_vert_fold_4_on_mouseup,btn_getxdatasetvalue_on_mouseup,btn_addstring_on_mouseup,btn_setpicklist_on_mouseup,btn_getselectedcode_on_mouseup,btn_setselectedcode_on_mouseup,cbo_basic_on_itemchange"/>
 		<tab_order order_option="2" order_info="3,1,7"/>
 		<tab control_id="3" position="1" x="0" y="64" right="1020" bottom="0" width="260" height="736" margin="0,0,64,0" resize_dir="2" border="0" tabitem_hidden="1">
 			<tab_item width="260" link_screen="/SYS/Frames/lnb" panel_color="00EBEBEB">
@@ -12,7 +12,7 @@
 			</tab_item>
 		</tab>
 		<tab control_id="7" x="260" y="64" right="0" bottom="0" width="1020" height="736" resize_dir="3" back_color="00F6F5F3" border="0" tabitem_hidden="1">
-			<tab_item link_screen="/SYS/pages/ID-002" panel_color="00EBEBEB">
+			<tab_item link_screen="/SYS/pages/ID-003" panel_color="00EBEBEB">
 			</tab_item>
 		</tab>
 	</map>

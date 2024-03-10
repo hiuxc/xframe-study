@@ -48,6 +48,16 @@
   background-color: #fff;
   opacity: 0.2;
 }
+.has-line2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: #ccc;
+}
 ._xf_grid_box ._xf_grid_treeitem_text_span {
   font-size: 15px;
 }
@@ -96,6 +106,9 @@
 .panel_inner {
   width: calc(100% - 48px) !important;
 }
+.panel_inner ._xf_panel_inner_content_wrapper {
+  overflow: visible !important;
+}
 .panel_test {
   width: calc(100% - 64px) !important;
   box-shadow: 1px 1px 4px 0px #0000000d;
@@ -106,6 +119,10 @@
 .grid_width {
   width: calc(100% - 48px) !important;
   margin-left: 24px;
+}
+.inner_component {
+  width: calc(100% - 32px) !important;
+  margin-left: 16px !important;
 }
 ._xf_screen_selectbox_item {
   font-size: 14px;
@@ -161,6 +178,7 @@
   border: 1px solid #42444e;
   color: #fff;
 }
+<<<<<<< HEAD
 /*
 .hover_test_wrap:hover .display_none {
   display: block !important;
@@ -171,4 +189,68 @@
 .hover_target:hover + .display_none {
   display: block !important;
   visibility: visible !important;
+=======
+.widthFit ._xf_radiogroup_item {
+  width: fit-content !important;
+}
+._xf_screen_selectbox_date_button_table ~ * {
+  font-size: 14px !important;
+}
+.table_btn button {
+  background-position: left 4px center !important;
+}
+.table_btn button > span {
+  padding-right: 10px !important;
+}
+._xf_pagingbar_item_text {
+  font-size: 13px !important;
+  vertical-align: super;
+}
+._xf_pageingbar_item_selected ._xf_pagingbar_item_text {
+  font-weight: 600 !important;
+}
+._xf_pagingbar_item_next {
+  margin-left: 6px !important;
+}
+._xf_pagingbar_item_prev {
+  margin-right: 6px !important;
+}
+._xf_grid_box ._xf_hscroll_track::-webkit-scrollbar-track {
+  width: 0 !important;
+  display: none !important;
+}
+._xf_grid_box ._xf_hscroll_bar_image {
+  display: none !important;
+}
+._xf_grid_box ._xf_hscroll,
+._xf_grid_box ._xf_hscroll_track {
+  background: transparent !important;
+}
+._xf_grid_box ._xf_scroll_bar._xf_hscroll_bar {
+  display: none !important;
+}
+._xf_grid_box > ._xf_grid_content,
+._xf_grid_box ._xf_hscroll {
+  height: 100% !important;
+}
+._xf_grid_box ._xf_hscroll_right_button {
+  background-image: url(../image/right_btn.png);
+}
+._xf_grid_box ._xf_hscroll_left_button {
+  background-image: url(../image/left_btn.png);
+}
+.amchart {
+  background: url(../image/kb_logo.png) center / 40px no-repeat;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+.popBg {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.testPop {
+  top: 44px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  box-shadow: 4px 4px 8px 0px #00000014;
+>>>>>>> afba705cd8405fdd0b704828ca9fb7f702bf53a6
 }
