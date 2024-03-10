@@ -406,23 +406,35 @@ var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
 cursor.lineY.set("visible", false);
 
 // Create axes
+
+let xRenderer = am5xy.AxisRendererX.new(root, {});
 var xAxis = chart.xAxes.push(am5xy.DateAxis.new(root, {  
   baseInterval: {
     timeUnit: "year",
     count: 1
   },
-  renderer: am5xy.AxisRendererX.new(root, { minorGridEnabled: true }),
+  renderer: xRenderer,
   tooltip: am5.Tooltip.new(root, {})
 }));
-
+ xRenderer.grid.template.set("forceHidden", true);
 /* 그리드 색상 */
 let yRenderer = am5xy.AxisRendererY.new(root, {});
 yRenderer.grid.template.set("strokeOpacity", 1);
 root.interfaceColors.set("grid", am5.color(0xF4F5F6));
 var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {  
+	
+    min: 20,
+    max: 60,    
   renderer: yRenderer
 }));
-
+xAxis.get("renderer").labels.template.setAll({
+	fontSize: 12,
+	fill: am5.color(0x667085)
+});
+yAxis.get("renderer").labels.template.setAll({
+	fontSize: 12,
+	fill: am5.color(0x667085)
+});
 
 // Add series
 var series = chart.series.push(am5xy.LineSeries.new(root, {
@@ -434,7 +446,8 @@ var series = chart.series.push(am5xy.LineSeries.new(root, {
   tooltip: am5.Tooltip.new(root, {
     labelText: "{valueX}: {valueY}\n{previousDate}: {value2}"
   }),
-  stroke: am5.color('#61A96D')
+  stroke: am5.color('#61A96D'),
+
 }));
 
 series.strokes.template.setAll({
@@ -549,7 +562,6 @@ let xRenderer = am5radar.AxisRendererCircular.new(root, {});
 xRenderer.labels.template.setAll({
   radius: 10
 });
-
 let xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
   maxDeviation: 0,
   categoryField: "country",
@@ -557,10 +569,12 @@ let xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
   tooltip: am5.Tooltip.new(root, {})
 }));
 
-let yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-  renderer: am5radar.AxisRendererRadial.new(root, {})
-}));
+let yRenderer = am5radar.AxisRendererRadial.new(root, {})
 
+let yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  renderer: yRenderer
+}));
+  
 // Create series
 let series = chart.series.push(am5radar.RadarLineSeries.new(root, {
   name: "Series",
