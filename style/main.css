@@ -161,3 +161,14 @@
   border: 1px solid #42444e;
   color: #fff;
 }
+/*
+.hover_test_wrap:hover .display_none {
+  display: block !important;
+  visibility: visible !important;
+}
+*/
+
+.hover_target:hover + .display_none {
+  display: block !important;
+  visibility: visible !important;
+}

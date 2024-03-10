@@ -3,3 +3,18 @@
 #component=tableview_cell
 back_color00FBFBFB
 
+#id=test1
+#comment=
+#component=ellipse
+width30width_percent30height30font맑은 고딕,9,0,0,0,0back_color00FF0E0Etransparent0
+
+#id=progress_box
+#comment=
+#component=panel
+semantic_tag0custom_classprogress_boxback_color00FFA0CFborder0title_font맑은 고딕,9,0,0,0,0
+
+#id=active_progress
+#comment=
+#component=panel
+semantic_tag0custom_classprogress_box activeback_color000000C4border0title_font맑은 고딕,9,0,0,0,0
+

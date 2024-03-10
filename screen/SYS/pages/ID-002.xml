@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="타겟속성관리" directory="/SYS/pages/" screenid="ID-002" last_update_date="2024-01-21 19:26:08" width="956" width_type="0" height="1500" height_type="2" back_color="00F6F5F3" transparent="1" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,comboBox_on_click"/>
+		<screen version="2.0" scriptcode="java" title="타겟속성관리" directory="/SYS/pages/" screenid="ID-002" last_update_date="2024-02-28 23:32:09" width="956" width_type="0" height="1500" height_type="2" back_color="00F6F5F3" transparent="1" on_load="eventfunc:screen_on_load()" funclist="screen_on_load,plusmonth_on_mouseup"/>
 		<panel control_id="0" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="956" width_unit="1" height="1500" height_unit="1" custom_class="panel_fit" back_color="00F6F5F3" border="0" title_font="맑은 고딕,9,0,0,0,0">
 			<tab_order order_option="0" order_info="93,94"/>
 			<panel control_id="93" semantic_tag="0" x="0" y="0" right="0" bottom="1446" width="956" width_unit="1" height="54" margin="0,0,32,0" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
@@ -9,7 +9,7 @@
 				<navibar control_id="92" name="navibar01" position="1" anchor="7" x="248" y="24" right="0" bottom="0" width="708" height="30" margin="0,32,0,0" transparent="1" horz_align="2" item_font="맑은 고딕,14,1,0,0,0" item_lastfont="맑은 고딕,14,1,0,0,0" item_forecolor="00666666" item_textmargin="0,0,0,0" item_sepfont="맑은 고딕,12,1,0,0,0" item_sepwidth="24"/>
 			</panel>
 			<panel control_id="94" semantic_tag="0" x="0" y="94" right="0" bottom="872" width="956" width_unit="1" height="534" margin="32,32,20,0" custom_class="panel_test" border="0" border_radius="8" title_font="맑은 고딕,9,0,0,0,0">
-				<tab_order order_option="0" order_info="113,158,160,121,156"/>
+				<tab_order order_option="0" order_info="113,158,160,164,168,156"/>
 				<text control_id="95" x="24" y="24" right="848" bottom="486" width="84" height="24" text="기간검색" font="맑은 고딕,16,1,0,0,0" version="1.1"/>
 				<panel control_id="156" semantic_tag="0" x="0" y="470" right="0" bottom="28" width="956" width_unit="1" height="36" margin="24,0,0,0" custom_class="panel_inner" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
 					<tab_order order_option="0" order_info="153,157"/>
@@ -24,7 +24,15 @@
 				<datepicker control_id="158" autosize="0" x="276" y="20" right="560" bottom="482" width="120" height="32" font="맑은 고딕,9,0,0,0,0" calendar_font="맑은 고딕,9,0,0,0,0" fore_color="00202020" transparent="0" border_color="00CCCCCC" border_radius="3" text_margin="12,1,1,1" button_size="20" default_value="2023.08.01" delimiter_char="."/>
 				<text control_id="159" x="414" y="24" right="531" bottom="498" width="11" height="12" text="~" font="맑은 고딕,12,0,0,0,0" fore_color="00999999" version="1.1"/>
 				<datepicker control_id="160" autosize="0" x="450" y="20" right="386" bottom="482" width="120" height="32" font="맑은 고딕,9,0,0,0,0" calendar_font="맑은 고딕,9,0,0,0,0" fore_color="00202020" transparent="0" border_color="00CCCCCC" border_radius="3" text_margin="12,1,1,1" button_size="20" default_value="2023.08.01" delimiter_char="."/>
-				<radiogroup control_id="121" x="468" y="174" right="288" bottom="328" width="200" height="32" display_type="0" custom_class="noBtnRadio" font="맑은 고딕,14,0,0,0,0" transparent="0" radio_width="24" radio_horzalign="1" text_horzalign="1" text_margin="0,0,0,0" text_wordellipsis="0" drawfocusrect="0" focusrect_bordertype="0" focus_style_use="1" item_transparent="1" item_margin="0,4,0,0" default_value="0" column_count="3" row_count="0" radiogroup_data="del=&apos;:&apos; pos=&apos;0&apos; style=&apos;1&apos; content=&apos;당일:&#x0D;&#x0A;1주일:&#x0D;&#x0A;1개월:&apos;" picklist_style="0"/>
+				<arrowbox control_id="161" x="192" y="115" right="644" bottom="369" width="120" height="50"/>
+				<rectangle control_id="162" x="120" y="186" right="736" bottom="248" width="100" height="100" font="맑은 고딕,9,0,0,0,0" transparent="1"/>
+				<rectangle control_id="163" x="120" y="324" right="736" bottom="110" width="100" height="100" font="맑은 고딕,9,0,0,0,0" transparent="1"/>
+				<panel control_id="164" semantic_tag="0" x="480" y="96" right="216" bottom="156" width="260" height="282" height_type="1" resize_dir="3" custom_class="hover_test_wrap" back_color="00CCCCCC" transparent="1" border="0" title_font="맑은 고딕,9,0,0,0,0">
+					<tab_order order_option="0" order_info="165,167"/>
+					<panel control_id="165" semantic_tag="0" x="72" y="18" right="58" bottom="162" width="130" height="102" custom_class="hover_target" back_color="0000E0EE" border="0" title_font="맑은 고딕,9,0,0,0,0"></panel>
+					<panel control_id="167" semantic_tag="0" x="72" y="144" right="58" bottom="36" width="130" height="102" custom_class="display_none" back_color="0000E0EE" border="0" hidden="1" title_font="맑은 고딕,9,0,0,0,0"></panel>
+				</panel>
+				<pushbutton control_id="168" x="354" y="390" right="502" bottom="118" width="100" height="26" text="달 더하기" font="맑은 고딕,9,0,0,0,0" hover_font="맑은 고딕,9,0,0,0,0" version="1.1" on_mouseup="eventfunc:plusmonth_on_mouseup(objInst)"/>
 			</panel>
 		</panel>
 	</map>

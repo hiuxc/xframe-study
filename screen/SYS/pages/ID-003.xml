@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map_list>
+	<map>
+		<screen version="2.0" scriptcode="java" title="그래프 테스트" directory="/SYS/pages/" screenid="ID-003" last_update_date="2024-03-10 14:39:04" width="1200" width_type="0" height="1500" height_type="2" back_color="00F6F5F3" transparent="1" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createPieChart_1,createPieChart_2,createColumnNLine,createLineChart,createRadarChart"/>
+		<panel control_id="0" semantic_tag="0" x="0" y="0" right="0" bottom="0" width="1200" width_unit="1" height="1500" height_unit="1" custom_class="panel_fit" back_color="00F6F5F3" border="0" title_font="맑은 고딕,9,0,0,0,0">
+			<tab_order order_option="0" order_info="93"/>
+			<panel control_id="93" semantic_tag="0" x="0" y="0" right="0" bottom="1446" width="1200" width_unit="1" height="54" margin="0,0,32,0" transparent="1" border="0" content_display_type="2" content_flex_justifycontent="space-between" title_font="맑은 고딕,9,0,0,0,0">
+				<text control_id="1" position="1" anchor="4" x="0" y="0" right="1026" bottom="20" width="174" height="34" margin="32,0,0,0" text="타겟속성관리" font="맑은 고딕,22,1,0,0,0" transparent="1" version="1.1"/>
+				<navibar control_id="92" name="navibar01" position="1" anchor="7" x="248" y="24" right="244" bottom="0" width="708" height="30" margin="0,32,0,0" transparent="1" horz_align="2" item_font="맑은 고딕,14,1,0,0,0" item_lastfont="맑은 고딕,14,1,0,0,0" item_forecolor="00666666" item_textmargin="0,0,0,0" item_sepfont="맑은 고딕,12,1,0,0,0" item_sepwidth="24"/>
+			</panel>
+			<amcharts5 control_id="169" name="amchart_1" x="111" y="150" right="844" bottom="1105" width="245" height="245" custom_class="nhwm_singleview_pie1" border="0" chart_type="2" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
+			<amcharts5 control_id="171" name="amchart_2" x="480" y="150" right="475" bottom="1105" width="245" height="245" custom_class="nhwm_singleview_pie1" border="0" chart_type="2" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
+			<amcharts5 control_id="172" name="ColumnLine" x="36" y="450" right="105" bottom="802" width="1059" height="248" custom_class="nhwm_singleview_pie1" border="0" chart_type="1" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
+			<amcharts5 control_id="173" name="linechart" x="36" y="726" right="105" bottom="526" width="1059" height="248" custom_class="nhwm_singleview_pie1" border="0" chart_type="1" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
+			<amcharts5 control_id="174" name="RadarChart_1" x="780" y="150" right="175" bottom="1105" width="245" height="245" custom_class="nhwm_singleview_pie1" border="0" chart_type="3" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
+		</panel>
+	</map>
+</map_list>

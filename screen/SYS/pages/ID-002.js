@@ -22,7 +22,7 @@
 	navibar01.setitembackcolor(4, factory.rgb(238,245,255));
 	*/
 	
-	
+	/*
 	function convertPtToPx(ptSize) {
 		return ptSize / 1.33;
 	}
@@ -75,5 +75,27 @@ function comboBox_on_click(objInst, buttonclick)
 		let thisParent2 = $(this).closest("._xf_screen_selectbox").css("font-size");				
 		$(this).css("font-size", thisParent2);  
 	});
+	*/
 	
+	
+
+}
+
+
+function plusmonth_on_mouseup(objInst)
+{
+	let today = getToday();
+function getToday() {
+    let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();    
+    return year + setDateZero(month) + setDateZero(day);
+}
+console.log(today)
+	
+//날짜 자릿수 맞추기
+function setDateZero(date){
+    return date < 10 ? '0' + date : date;
+}
 }
