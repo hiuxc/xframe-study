@@ -34,6 +34,9 @@ let xRenderer = am5radar.AxisRendererCircular.new(root, {
 xRenderer.labels.template.setAll({
 	textType: "adjusted",
   radius: 20,
+location: 1
+ //centerX. am5.p50,
+//centerY: am5.p50
   
 
 });
@@ -44,10 +47,13 @@ let xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
   tooltip: am5.Tooltip.new(root, {})
 }));
 
+
+
  var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
             renderer: am5radar.AxisRendererRadial.new(root, {}),
             min: 0,
-            max: 100
+            max: 100,
+
         }));
   
 // Create series

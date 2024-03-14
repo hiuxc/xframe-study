@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="그래프2" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-008" last_update_date="2024-03-13 22:21:53" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createRadarChart"/>
+		<screen version="2.0" scriptcode="java" title="그래프2" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-008" last_update_date="2024-03-14 12:25:52" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createRadarChart"/>
 		<amcharts5 control_id="688" name="linechart" x="36" y="726" right="405" bottom="26" width="1059" height="248" custom_class="nhwm_singleview_pie1" chart_type="1" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
 		<amcharts5 control_id="689" name="RadarChart_1" x="120" y="114" right="1135" bottom="641" width="245" height="245" custom_class="nhwm_singleview_pie1" chart_type="3" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
 	</map>
