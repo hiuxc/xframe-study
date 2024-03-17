@@ -421,6 +421,7 @@ var xAxis = chart.xAxes.push(am5xy.DateAxis.new(root, {
 /* 그리드 색상 */
 let yRenderer = am5xy.AxisRendererY.new(root, {});
 yRenderer.grid.template.set("strokeOpacity", 1);
+
 root.interfaceColors.set("grid", am5.color(0xF4F5F6));
 var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {  
 	
@@ -561,12 +562,13 @@ cursor.lineY.set("visible", false);
 // Create axes and their renderers
 let xRenderer = am5radar.AxisRendererCircular.new(root, {});
 xRenderer.labels.template.setAll({
-  radius: 10
+  radius: 10,  
 });
 let xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
   maxDeviation: 0,
   categoryField: "country",
   renderer: xRenderer,
+
   tooltip: am5.Tooltip.new(root, {})
 }));
 

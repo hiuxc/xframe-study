@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map_list>
+	<map>
+		<screen version="2.0" scriptcode="java" title="탭스크립트 테스트" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-009" last_update_date="2024-03-15 23:23:26" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createRadarChart"/>
+		<tab control_id="690" x="120" y="132" right="672" bottom="334" width="708" height="534" border="0" tabitem_font="맑은 고딕,9,0,0,0,0" tabitem_selfont="맑은 고딕,9,0,0,0,0" titlebar_font="맑은 고딕,9,1,0,0,0">
+			<tab_item link_screen="/SYS/pages/ID-007" link_type="1" link_loadtype="1" panel_color="00EBEBEB">
+			</tab_item>
+		</tab>
+	</map>
+</map_list>

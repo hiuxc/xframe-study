@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="그래프" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-006" last_update_date="2024-03-13 21:39:43" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createPieChart_1,createPieChart_2,createColumnNLine,createLineChart,createRadarChart,createCircle"/>
+		<screen version="2.0" scriptcode="java" title="그래프" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-006" last_update_date="2024-03-16 13:23:06" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createPieChart_1,createPieChart_2,createColumnNLine,createLineChart,createRadarChart,createCircle"/>
 		<amcharts5 control_id="685" name="amchart_1" x="111" y="150" right="1144" bottom="605" width="245" height="245" custom_class="nhwm_singleview_pie1" chart_type="2" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
 		<amcharts5 control_id="686" name="amchart_2" x="480" y="150" right="775" bottom="605" width="245" height="245" custom_class="nhwm_singleview_pie1" chart_type="2" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
 		<amcharts5 control_id="687" name="ColumnLine" x="36" y="450" right="405" bottom="302" width="1059" height="248" custom_class="nhwm_singleview_pie1" chart_type="1" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
