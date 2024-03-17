@@ -51,7 +51,7 @@ function screen_on_load()
         radius = Width * 0.4;
 
       function drawTrackArc() {
-        context.beginPath();
+        context.beginPath();  
         context.strokeStyle = '#EEEEEE';
         context.lineWidth = 2;
         context.arc(Width / 2, Height / 2, radius, (Math.PI / 180) * (startAngle * 360 - 90), (Math.PI / 180) * (endAngle * 360 + 270), false);
@@ -61,12 +61,13 @@ function screen_on_load()
 
       function drawOuterArc(_angle, _color) {
         var angle = _angle;        
-        context.beginPath();
-        context.strokeStyle = '#FCCA3E';
+        context.beginPath();        
+       context.strokeStyle = '#FCCA3E';
         context.lineWidth = 8;
         context.arc(Width / 2, Height / 2, radius, (Math.PI / 180) * (startAngle * 360 - 90), (Math.PI / 180) * (angle * 360 - 90), false);
         context.stroke();
-        context.closePath();
+       context.closePath();
+context.lineCap = 'round';
       }
 /*
       function numOfPercentage(_angle, _color) {
@@ -82,6 +83,7 @@ function screen_on_load()
 */
       function drawACircleInTheEnd() {
         let radians = angle * 2 * Math.PI;
+
         context.beginPath();
         context.arc(Width / 2 + radius * (Math.sin(radians)),
           Height / 2 - radius * (Math.cos(radians)),
