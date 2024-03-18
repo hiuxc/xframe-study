@@ -2,23 +2,10 @@
 
 
 function screen_on_load()
+	
 {
-  function drawACircleInTheEnd(){
-  let radians = angle * 2 * Math.PI;
-  context.beginPath();
-  context.arc(Width/2 + radius * (Math.sin(radians)), 
-              Height/2 - radius * (Math.cos(radians)), 
-              10, 
-              0, 
-              2 * Math.PI, 
-              false);
-  context.fillStyle = 'white';
-  context.fill();
-  context.lineWidth = 5;
-  context.strokeStyle = '#F90';
-  context.stroke();
-}
-
+ 	this.hey.setmaxvalue(100);
+	this.hey.setpos(50);
 (function($) {
   $.fn.circleGraphic = function(options) {
     $.fn.circleGraphic.defaults = {
@@ -69,18 +56,7 @@ function screen_on_load()
        context.closePath();
 context.lineCap = 'round';
       }
-/*
-      function numOfPercentage(_angle, _color) {
-        var angle = Math.ceil(_angle * 100);        
-        context.font = "24px Noto Sans KR";
-        context.fillStyle = '#000000';
-        var metrics = context.measureText(angle);
-        var textWidth = metrics.width;
-        var xPos = Width / 2 - textWidth / 2,
-          yPos = Height / 2 + textWidth / 2;
-        context.fillText(angle + "%", xPos, yPos);
-      }
-*/
+
       function drawACircleInTheEnd() {
         let radians = angle * 2 * Math.PI;
 
@@ -123,5 +99,12 @@ $('.circleGraphic').circleGraphic();
 	var Numtxt = $(".circleGraphic").text();
 	$(".circleGraphic").append("<div>" + Numtxt + "%" + "</div>");	
 	
+
+}
+
+function click_on_click(objInst)
+{
+	//this.hey.addtransitionclass("_xfe_rotatez_360", "TransitionCallbackFunc");
+
 
 }

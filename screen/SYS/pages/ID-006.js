@@ -71,7 +71,7 @@ function createPieChart_1()
 	
 	var legend = chart.children.push(am5.Legend.new(root, {
 centerX: am5.percent(50),
-x: am5.percent(100),  
+x: am5.percent(10),  
 centerY: am5.percent(100),
   y: am5.percent(50),
   layout: root.verticalLayout
@@ -81,6 +81,7 @@ legend.labels.template.setAll({
   width: 140,
   oversizedBehavior: "wrap"
 });
+legend.valueLabels.template.set("forceHidden", true);
 legend.data.setAll(series.dataItems);
 	
 	let label = chart.seriesContainer.children.push(
