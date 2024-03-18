@@ -18,6 +18,7 @@ function createPieChart_1()
 	var chart = root.container.children.push( 
 		am5percent.PieChart.new(root, {
 		layout: root.verticalLayout,
+		
 		innerRadius: am5.percent(70)
 		}) 
 	);
@@ -68,11 +69,26 @@ function createPieChart_1()
 		strokeWidth: 4
 	})	
 	
+	var legend = chart.children.push(am5.Legend.new(root, {
+centerX: am5.percent(50),
+x: am5.percent(100),  
+centerY: am5.percent(100),
+  y: am5.percent(50),
+  layout: root.verticalLayout
+}));
+legend.labels.template.setAll({ 
+  maxWidth: 140,
+  width: 140,
+  oversizedBehavior: "wrap"
+});
+legend.data.setAll(series.dataItems);
+	
 	let label = chart.seriesContainer.children.push(
   am5.Label.new(root, {
     textAlign: "center",
     centerY: am5.p50,
     centerX: am5.p50,
+ layout: root.horizontalLayout,
     text: "[fontSize:13px #555555]최종설계일[/]\n[bold fontSize:13px #555555]23.08.11[/]"
   })
 );
