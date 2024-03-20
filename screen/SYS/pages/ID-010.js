@@ -176,4 +176,3 @@ series2.appear(1000);
 chart.appear(1000, 100);;
 }
 
-

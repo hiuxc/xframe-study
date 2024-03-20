@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="은퇴나이" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-010" last_update_date="2024-03-17 18:26:03" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createLineChart2"/>
+		<screen version="2.0" scriptcode="java" title="은퇴나이" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-010" last_update_date="2024-03-20 21:47:28" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,createLineChart2"/>
 		<amcharts5 control_id="691" name="linechart2" x="60" y="54" right="714" bottom="652" width="726" height="294" chart_type="1" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
 	</map>
 </map_list>

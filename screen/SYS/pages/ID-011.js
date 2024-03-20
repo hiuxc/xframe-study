@@ -262,10 +262,7 @@ var series1 = chart.series.push(
     valueYField: "현금유입",
     categoryXField: "age",
 	locationX: 1,
-    tooltip: am5.Tooltip.new(root, {
-      pointerOrientation: "horizontal",
-      labelText: "{name} in {categoryX}: {valueY} {info}"
-    }),  
+   
     fill: am5.color(0x76A8FC) 
   })
 );
@@ -273,9 +270,22 @@ var series1 = chart.series.push(
 series1.columns.template.setAll({
   width: 28,
   tooltipY: am5.percent(10),
+
   templateField: "columnSettings"
 });
-
+  series1.bullets.push(function () {
+          return am5.Bullet.new(root, {
+            locationX: 0.5,
+            locationY: 1.2,
+            sprite: am5.Label.new(root, {
+              centerX: am5.p50,
+              centerY: am5.p50,
+              text: "{valueY}%",
+              fill: am5.color(0x000),
+              populateText: true
+            })
+          });
+        });
 series1.data.setAll(data);
 
 var series2 = chart.series.push(
