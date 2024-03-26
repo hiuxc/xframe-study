@@ -1,6 +1,7 @@
 ﻿function screen_on_load()
 {
 	
+	
 	navibar01.deleteallitem();
 	
 	// 아이템 추가
@@ -76,4 +77,35 @@ function comboBox_on_click(objInst, buttonclick)
 		$(this).css("font-size", thisParent2);  
 	});
 	
+}
+
+function check1_on_itemchange(objInst, prev_value, curr_value, event_type)
+{
+	
+}
+
+function check1_on_click(objInst)
+{
+	var test1 = this.check1.getcheck()
+	var test2 = this.check2.getcheck()
+	
+		if(test1 == false && test2 == false){
+		this.see.setvisible(false)
+		}
+	
+		
+		//	
+		
+		
+
+}
+
+function check2_on_click(objInst)
+{
+	var test1 = this.check1.getcheck()
+	var test2 = this.check2.getcheck()
+	
+		if(test1 == false && test2 == false){
+		this.see.setvisible(false)
+		}
 }
