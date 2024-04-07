@@ -129,12 +129,34 @@ function makeSeries(name, fieldName) {
     xAxis: xAxis,
     yAxis: yAxis,    
     valueYField: fieldName,
-    categoryXField: "year"
+    categoryXField: "year",
+tooltip: am5.Tooltip.new(root, {})
   }));
   series.strokes.template.setAll({
   	strokeWidth: 3,
   templateField: "strokeSettings"
 });
+
+ series.get("tooltip").label.adapters.add("text", function(text, target) {
+    text = "";
+    var i = 0;
+    chart.series.each(function(series) {
+      var tooltipDataItem = series.get("tooltipDataItem");
+      if(tooltipDataItem){
+        if(i != 0){
+           text += "\n";
+        }
+        text += '[' + series.get("stroke").toString() + ']●[/] [bold width:100px]' + series.get("name") + ':[/] ' + tooltipDataItem.get("fieldName");
+      }
+      i++;
+    })
+    return text
+  });
+
+series.fills.template.setAll({
+    fillOpacity: 0.5,
+    visible: true
+  });
   series.data.setAll(data);
   
   series.appear();

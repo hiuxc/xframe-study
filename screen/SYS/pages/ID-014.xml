@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <map_list>
 	<map>
-		<screen version="2.0" scriptcode="java" title="성과관리 그래프2" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-014" last_update_date="2024-03-23 15:45:05" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,multiLined"/>
+		<screen version="2.0" scriptcode="java" title="성과관리 그래프2" description="팝업샘플의 일반화면" directory="/SYS/pages/" screenid="ID-014" last_update_date="2024-04-07 16:53:17" width="1500" width_type="0" height="1000" height_type="0" on_load="eventfunc:screen_on_load()" funclist="amchart_on_libload,multiLined"/>
 		<amcharts5 control_id="691" name="multiLine" x="60" y="54" right="730" bottom="596" width="710" height="350" chart_type="1" on_libload="eventfunc:amchart_on_libload(objInst, chart_type)"/>
 	</map>
 </map_list>

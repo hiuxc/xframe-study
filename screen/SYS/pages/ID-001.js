@@ -88,24 +88,16 @@ function check1_on_click(objInst)
 {
 	var test1 = this.check1.getcheck()
 	var test2 = this.check2.getcheck()
-	
-		if(test1 == false && test2 == false){
+	if(test1 == false && test2 == false){
 		this.see.setvisible(false)
-		}
-	
-		
-		//	
-		
-		
-
+	}
 }
 
 function check2_on_click(objInst)
 {
 	var test1 = this.check1.getcheck()
-	var test2 = this.check2.getcheck()
-	
-		if(test1 == false && test2 == false){
+	var test2 = this.check2.getcheck()	
+	if(test1 == false && test2 == false){
 		this.see.setvisible(false)
-		}
+	}
 }
