@@ -183,7 +183,8 @@ var data = [
     month: "23.01",
     income: 20,
     expenses: 21.1,
-	asset: 6
+	asset: 6,
+	
   },
   {
     month: "23.02",
@@ -237,7 +238,11 @@ var data = [
     month: "23.10",
     income: 29.5,
     expenses: 31.1,
-	asset: 16
+	asset: 16,
+	 columnSettings: {
+    fill: am5.color(0xc4ad83),
+    stroke: am5.color(0xc4ad83)
+  }
   },
  {
     month: "23.11",
